@@ -1,0 +1,632 @@
+{
+  "home": {
+    "badge": "Plateforme gratuite et sécurisée",
+    "title": "Trouvez et vendez dans votre",
+    "titleHighlight": "communauté",
+    "subtitle": "La plateforme de petites annonces dédiée à la communauté tchétchène. Publiez gratuitement vos annonces et connectez-vous directement avec les acheteurs.",
+    "securePlatform": "Plateforme sécurisée",
+    "secureDescription": "Système d'avis et de badges pour identifier les membres fiables. Votre sécurité est notre priorité.",
+    "directCommunication": "Communication directe",
+    "directDescription": "Échangez directement avec les vendeurs via notre système de messagerie intégré.",
+    "communitySpirit": "Esprit communautaire",
+    "communityDescription": "Une plateforme créée par et pour la communauté tchétchène.",
+    "browseCategories": "Parcourir les catégories",
+    "browseDescription": "Découvrez nos différentes catégories d'annonces",
+    "viewAllListings": "Voir toutes les annonces",
+    "freeAndFast": "Gratuit et rapide",
+    "readyToPost": "Prêt à publier votre annonce ?",
+    "readyDescription": "Créez votre annonce en quelques minutes et commencez à recevoir des messages dès aujourd'hui.",
+    "postFree": "Publier gratuitement",
+    "recentListings": "Annonces récentes",
+    "availableListings": "{count} annonce{count, plural, =1 {} other {s}} disponible{count, plural, =1 {} other {s}}",
+    "availableListingsSimple": "{count} annonces disponibles"
+  },
+  "header": {
+    "title": "Vay Bazar",
+    "subtitle": "Petites annonces",
+    "messages": "Messages",
+    "favorites": "Favoris",
+    "profile": "Mon profil",
+    "myListings": "Mes annonces",
+    "signOut": "Se déconnecter",
+    "signIn": "Se connecter",
+    "signUp": "S'inscrire",
+    "deposit": "Déposer",
+    "publish": "Publier"
+  },
+  "footer": {
+    "about": "À propos",
+    "whoWeAre": "Qui sommes-nous ?",
+    "contactUs": "Nous contacter",
+    "legal": "Informations légales",
+    "terms": "Conditions d'utilisation",
+    "privacy": "Politique de confidentialité",
+    "legalNotice": "Mentions légales",
+    "help": "Aide",
+    "helpCenter": "Centre d'aide",
+    "safetyTips": "Conseils de sécurité",
+    "report": "Signaler un problème",
+    "followUs": "Suivez-nous",
+    "copyright": "© {year} Vay Bazar - La plateforme d'échange de la communauté"
+  },
+  "mobileNav": {
+    "home": "Accueil",
+    "publish": "Publier",
+    "messages": "Messages",
+    "profile": "Profil"
+  },
+  "categories": {
+    "free": "Gratuit"
+  },
+  "favorites": {
+    "title": "Mes favoris",
+    "count": "{count} {count, plural, =1 {annonce enregistrée} other {annonces enregistrées}}",
+    "emptyTitle": "Aucun favori pour le moment",
+    "emptyDescription": "Ajoutez des annonces à vos favoris pour les retrouver facilement",
+    "browseListings": "Parcourir les annonces"
+  },
+  "messages": {
+    "title": "Messages",
+    "loading": "Chargement des messages...",
+    "searchPlaceholder": "Rechercher une conversation...",
+    "noConversations": "Aucune conversation trouvée",
+    "viewFullListing": "Voir l'annonce complète",
+    "messagePlaceholder": "Écrivez votre message...",
+    "selectConversation": "Sélectionnez une conversation",
+    "selectConversationDescription": "Choisissez une conversation pour commencer à discuter"
+  },
+  "newListing": {
+    "title": "Déposer une annonce",
+    "subtitle": "Partagez vos biens ou services avec la communauté",
+    "errors": {
+      "fillRequired": "Veuillez remplir tous les champs obligatoires",
+      "fillTransportCities": "Veuillez remplir les villes de départ et d'arrivée pour cette catégorie",
+      "fillBtpFields": "Veuillez remplir les compétences et l'expérience pour cette catégorie",
+      "invalidWhatsApp": "Le numéro WhatsApp n'est pas valide. Format attendu : +33 6 12 34 56 78 ou 06 12 34 56 78",
+      "createFailed": "Erreur lors de la création de l'annonce",
+      "createError": "Une erreur est survenue lors de la création de l'annonce",
+      "imageProcessing": "Erreur lors du traitement des images"
+    },
+    "basicInfo": {
+      "title": "Informations de base",
+      "description": "Décrivez votre annonce en détail",
+      "titleLabel": "Titre de l'annonce",
+      "titlePlaceholder": "Ex: Renault Clio 2018 en excellent état",
+      "characters": "caractères",
+      "categoryLabel": "Catégorie",
+      "categoryPlaceholder": "Sélectionnez une catégorie",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "Décrivez votre annonce en détail : état, caractéristiques, raison de la vente..."
+    },
+    "transport": {
+      "title": "Informations de transport",
+      "description": "Précisez les villes de départ et d'arrivée",
+      "departureCity": "Ville de départ",
+      "departurePlaceholder": "Ex: Paris",
+      "arrivalCity": "Ville d'arrivée",
+      "arrivalPlaceholder": "Ex: Grozny"
+    },
+    "btp": {
+      "title": "Compétences et expérience",
+      "description": "Mettez en avant votre savoir-faire professionnel",
+      "skillsLabel": "Compétences",
+      "skillsPlaceholder": "Ex: Plomberie, Électricité, Maçonnerie...",
+      "skillsHint": "Séparez les compétences par des virgules",
+      "experienceLabel": "Années d'expérience",
+      "experiencePlaceholder": "Ex: 15 ans d'expérience professionnelle"
+    },
+    "sadaqa": {
+      "message": "Cette catégorie est réservée aux dons gratuits (Sadaqa). Le prix sera automatiquement à 0€."
+    },
+    "price": {
+      "title": "Prix et état",
+      "description": "Indiquez le prix et l'état de l'article",
+      "priceLabel": "Prix (€)",
+      "priceHint": "Laissez vide si le prix n'est pas fixé",
+      "sadaqaFree": "Gratuit pour les dons (Sadaqa)",
+      "conditionLabel": "État",
+      "conditionPlaceholder": "Sélectionnez l'état",
+      "condition": {
+        "new": "Neuf",
+        "likeNew": "Comme neuf",
+        "good": "Bon état",
+        "normal": "Usage normal",
+        "parts": "Pour pièces"
+      },
+      "negotiable": "Prix négociable"
+    },
+    "location": {
+      "title": "Localisation et contact",
+      "description": "Comment vous contacter",
+      "cityLabel": "Ville",
+      "loadingCities": "Chargement des villes...",
+      "cityPlaceholder": "Entrez votre ville (ex: Paris)",
+      "selectCity": "Sélectionnez votre ville",
+      "whatsappLabel": "Numéro WhatsApp (recommandé)",
+      "whatsappPlaceholder": "+33 6 12 34 56 78 ou 06 12 34 56 78"
+    },
+    "photos": {
+      "title": "Photos",
+      "description": "Ajoutez jusqu'à 6 photos (recommandé)",
+      "clickToAdd": "Cliquez pour ajouter des photos",
+      "formatHint": "PNG, JPG jusqu'à 10MB ({remaining} restantes)"
+    },
+    "actions": {
+      "cancel": "Annuler",
+      "publishing": "Publication...",
+      "publish": "Publier l'annonce"
+    }
+  },
+  "about": {
+    "title": "À propos de Vay Bazar",
+    "subtitle": "La plateforme d'échange créée par et pour la communauté tchétchène",
+    "backToHome": "Retour à l'accueil",
+    "mission": {
+      "title": "Notre mission",
+      "description": "Vay Bazar a été créé avec une vision simple mais puissante : faciliter les échanges et renforcer les liens au sein de notre communauté. Dans un monde où la confiance est précieuse, nous offrons un espace sûr où les membres de la communauté tchétchène peuvent acheter, vendre et échanger des biens et services en toute confiance."
+    },
+    "values": {
+      "community": {
+        "title": "Communautaire",
+        "description": "Créé par et pour notre communauté, Vay Bazar renforce les liens entre ses membres et favorise l'entraide."
+      },
+      "secure": {
+        "title": "Sécurisé",
+        "description": "Système d'avis et de badges pour identifier les membres fiables. Votre sécurité est notre priorité."
+      },
+      "accessible": {
+        "title": "Accessible",
+        "description": "Plateforme gratuite et facile à utiliser. Tout le monde peut publier des annonces et participer."
+      },
+      "trust": {
+        "title": "Confiance",
+        "description": "Les transactions se font entre membres de confiance, avec transparence et respect mutuel."
+      }
+    },
+    "history": {
+      "title": "Notre histoire",
+      "paragraph1": "Vay Bazar est né du constat que notre communauté avait besoin d'un espace dédié pour échanger. Les plateformes généralistes ne répondaient pas à nos besoins spécifiques : la confiance communautaire, la facilité de communication, et la compréhension de nos valeurs.",
+      "paragraph2": "Aujourd'hui, Vay Bazar rassemble des centaines de membres qui partagent, achètent et vendent en toute confiance. De l'immobilier aux services, en passant par l'emploi et les événements, notre plateforme couvre tous les besoins du quotidien."
+    },
+    "join": {
+      "title": "Rejoignez la communauté",
+      "description": "Que vous souhaitiez vendre, acheter ou simplement découvrir ce que notre communauté a à offrir, Vay Bazar est là pour vous.",
+      "createAccount": "Créer un compte",
+      "browseListings": "Parcourir les annonces"
+    }
+  },
+  "login": {
+    "title": "Connexion",
+    "description": "Connectez-vous à votre compte",
+    "emailLabel": "Email",
+    "emailPlaceholder": "votre@email.com",
+    "passwordLabel": "Mot de passe",
+    "showPassword": "Afficher le mot de passe",
+    "hidePassword": "Masquer le mot de passe",
+    "submit": "Se connecter",
+    "connecting": "Connexion...",
+    "noAccount": "Pas encore de compte ?",
+    "signUp": "Inscrivez-vous",
+    "errors": {
+      "generic": "Une erreur est survenue"
+    }
+  },
+  "signup": {
+    "title": "Inscription",
+    "description": "Créez votre compte pour commencer",
+    "firstNameLabel": "Prénom",
+    "firstNamePlaceholder": "Ahmed",
+    "lastNameLabel": "Nom",
+    "lastNamePlaceholder": "Dudaev",
+    "emailLabel": "Email",
+    "emailPlaceholder": "votre@email.com",
+    "phoneLabel": "Téléphone",
+    "phonePlaceholder": "+33 6 12 34 56 78 ou 06 12 34 56 78",
+    "locationLabel": "Ville",
+    "loadingCities": "Chargement des villes...",
+    "locationPlaceholder": "Entrez votre ville (ex: Paris)",
+    "selectCity": "Sélectionnez votre ville",
+    "passwordLabel": "Mot de passe",
+    "confirmPasswordLabel": "Confirmer le mot de passe",
+    "showPassword": "Afficher le mot de passe",
+    "hidePassword": "Masquer le mot de passe",
+    "submit": "S'inscrire",
+    "signingUp": "Inscription...",
+    "alreadyRegistered": "Déjà inscrit ?",
+    "signIn": "Connectez-vous",
+    "errors": {
+      "passwordMismatch": "Les mots de passe ne correspondent pas",
+      "passwordTooShort": "Le mot de passe doit contenir au moins 6 caractères",
+      "invalidPhone": "Le numéro de téléphone n'est pas valide. Format attendu : +33 6 12 34 56 78 ou 06 12 34 56 78",
+      "generic": "Une erreur est survenue"
+    }
+  },
+  "profile": {
+    "title": "Mon profil",
+    "subtitle": "Gérez vos informations personnelles",
+    "loading": "Chargement...",
+    "tabs": {
+      "profile": "Informations",
+      "security": "Sécurité"
+    },
+    "avatar": {
+      "title": "Photo de profil",
+      "description": "Ajoutez une photo pour personnaliser votre profil",
+      "changePhoto": "Changer la photo",
+      "formatHint": "JPG, PNG jusqu'à 5MB"
+    },
+    "personalInfo": {
+      "title": "Informations personnelles",
+      "description": "Vos informations de base",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+33 6 12 34 56 78 ou 06 12 34 56 78",
+      "location": "Ville",
+      "loadingCities": "Chargement des villes...",
+      "locationPlaceholder": "Entrez votre ville (ex: Paris)",
+      "selectCity": "Sélectionnez votre ville",
+      "currentCityNotFound": "Ville actuelle: {city} (non trouvée dans la liste)",
+      "bio": "Bio",
+      "bioPlaceholder": "Parlez un peu de vous...",
+      "characters": "caractères"
+    },
+    "password": {
+      "title": "Modifier le mot de passe",
+      "description": "Assurez-vous d'utiliser un mot de passe sécurisé",
+      "currentLabel": "Mot de passe actuel",
+      "newLabel": "Nouveau mot de passe",
+      "confirmLabel": "Confirmer le nouveau mot de passe",
+      "showPassword": "Afficher le mot de passe",
+      "hidePassword": "Masquer le mot de passe",
+      "update": "Modifier le mot de passe",
+      "updating": "Modification..."
+    },
+    "cancel": "Annuler",
+    "saveChanges": "Enregistrer les modifications",
+    "saving": "Enregistrement...",
+    "success": {
+      "profileUpdated": "Profil mis à jour avec succès",
+      "passwordUpdated": "Mot de passe modifié avec succès"
+    },
+    "errors": {
+      "invalidPhone": "Le numéro de téléphone n'est pas valide. Format attendu : +33 6 12 34 56 78 ou 06 12 34 56 78",
+      "passwordMismatch": "Les nouveaux mots de passe ne correspondent pas",
+      "passwordTooShort": "Le mot de passe doit contenir au moins 6 caractères",
+      "generic": "Une erreur est survenue"
+    }
+  },
+  "listings": {
+    "title": "Annonces",
+    "allListings": "Toutes les annonces",
+    "loading": "Chargement...",
+    "searchPlaceholder": "Rechercher dans les annonces...",
+    "categoryPlaceholder": "Catégorie",
+    "allCategories": "Toutes catégories",
+    "sortPlaceholder": "Trier par",
+    "sort": {
+      "recent": "Plus récent",
+      "priceAsc": "Prix croissant",
+      "priceDesc": "Prix décroissant",
+      "popular": "Plus populaire"
+    },
+    "filters": "Filtres",
+    "activeFilters": "Filtres actifs",
+    "negotiable": "Prix négociable",
+    "clearAll": "Tout effacer",
+    "foundCount": "{count} {count, plural, =1 {annonce trouvée} other {annonces trouvées}}",
+    "conditions": {
+      "new": "Neuf",
+      "likeNew": "Comme neuf",
+      "good": "Bon état",
+      "normal": "Usage normal",
+      "parts": "Pour pièces"
+    },
+    "advancedFilters": {
+      "title": "Filtres avancés",
+      "description": "Affinez votre recherche",
+      "location": "Localisation",
+      "loadingCities": "Chargement des villes...",
+      "locationPlaceholder": "Ville ou région...",
+      "allCities": "Toutes les villes",
+      "price": "Prix (€)",
+      "condition": "État",
+      "negotiableOnly": "Prix négociable uniquement",
+      "clear": "Effacer"
+    },
+    "noResults": {
+      "title": "Aucune annonce trouvée",
+      "description": "Essayez de modifier vos filtres de recherche",
+      "clearFilters": "Effacer tous les filtres"
+    }
+  },
+  "listingDetail": {
+    "breadcrumb": {
+      "home": "Accueil",
+      "listings": "Annonces"
+    },
+    "price": {
+      "freeDonation": "Gratuit (Don)",
+      "notSpecified": "Prix non spécifié"
+    },
+    "conditions": {
+      "new": "Neuf",
+      "likeNew": "Comme neuf",
+      "good": "Bon état",
+      "normal": "Usage normal",
+      "parts": "Pour pièces"
+    },
+    "negotiable": "Prix négociable",
+    "sadaqaBadge": "Sadaqa (Don)",
+    "views": "{count} {count, plural, =1 {vue} other {vues}}",
+    "transport": {
+      "route": "Itinéraire"
+    },
+    "btp": {
+      "title": "Compétences et expérience",
+      "skills": "Compétences",
+      "experience": "Expérience"
+    },
+    "description": "Description",
+    "share": "Partager",
+    "report": "Signaler",
+    "whatsappMessage": "Bonjour, je suis intéressé par votre annonce: {title}",
+    "seller": {
+      "title": "Vendeur",
+      "verified": "Amana",
+      "member": "Membre de la communauté",
+      "editListing": "Modifier l'annonce",
+      "yourListing": "C'est votre annonce",
+      "contactWhatsApp": "Contacter via WhatsApp",
+      "call": "Appeler"
+    },
+    "safetyTips": {
+      "title": "Conseils de sécurité",
+      "meetPublic": "Rencontrez-vous dans un lieu public",
+      "verifyBeforePay": "Vérifiez l'article avant de payer",
+      "neverPayAdvance": "Ne payez jamais à l'avance",
+      "reportSuspicious": "Signalez les comportements suspects"
+    }
+  },
+  "myListings": {
+    "title": "Mes annonces",
+    "subtitle": "Gérez vos annonces et suivez leurs performances",
+    "newListing": "Nouvelle annonce",
+    "price": {
+      "notSpecified": "Prix non spécifié"
+    },
+    "views": "{count} {count, plural, =1 {vue} other {vues}}",
+    "status": {
+      "active": "Active",
+      "sold": "Vendue",
+      "expired": "Expirée",
+      "draft": "Brouillon"
+    },
+    "stats": {
+      "active": "Annonces actives",
+      "totalViews": "Vues totales",
+      "sold": "Annonces vendues",
+      "drafts": "Brouillons"
+    },
+    "tabs": {
+      "active": "Actives ({count})",
+      "sold": "Vendues ({count})",
+      "expired": "Expirées ({count})",
+      "drafts": "Brouillons ({count})"
+    },
+    "actions": {
+      "view": "Voir l'annonce",
+      "edit": "Modifier",
+      "deactivate": "Désactiver",
+      "delete": "Supprimer"
+    },
+    "empty": {
+      "active": "Aucune annonce active",
+      "sold": "Aucune annonce vendue",
+      "expired": "Aucune annonce expirée",
+      "drafts": "Aucun brouillon",
+      "createFirst": "Créer votre première annonce"
+    }
+  },
+  "userProfile": {
+    "member": "Membre de la communauté",
+    "viewAllReviews": "Voir tous les avis",
+    "about": "À propos",
+    "memberSince": "Membre depuis {date}",
+    "activeListings": "{count} {count, plural, =1 {annonce active} other {annonces actives}}",
+    "userListings": "Annonces de {name}",
+    "listingsCount": "{count} {count, plural, =1 {annonce active} other {annonces actives}}",
+    "noActiveListings": "Aucune annonce active pour le moment"
+  },
+  "userReviews": {
+    "title": "Avis et recommandations",
+    "backToProfile": "Retour au profil",
+    "reviewsCount": "{count} {count, plural, =1 {avis} other {avis}}",
+    "noReviews": {
+      "title": "Aucun avis pour le moment",
+      "description": "Les premiers avis apparaîtront ici après les transactions."
+    }
+  },
+  "contact": {
+    "title": "Nous contacter",
+    "subtitle": "Une question, une suggestion ou besoin d'aide ? N'hésitez pas à nous contacter.",
+    "backToHome": "Retour à l'accueil",
+    "successMessage": "Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.",
+    "form": {
+      "title": "Envoyer un message",
+      "description": "Remplissez le formulaire ci-dessous et nous vous répondrons rapidement.",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours..."
+    },
+    "contactInfo": {
+      "email": {
+        "title": "Email",
+        "value": "contact@vaybazar.fr"
+      },
+      "phone": {
+        "title": "Téléphone",
+        "value": "+33 1 23 45 67 89"
+      },
+      "social": {
+        "title": "Réseaux sociaux",
+        "description": "Suivez-nous sur nos réseaux pour rester informé."
+      }
+    }
+  },
+  "leaveReview": {
+    "title": "Laisser un avis",
+    "back": "Retour",
+    "loading": "Chargement..."
+  },
+  "cgu": {
+    "title": "Conditions Générales d'Utilisation",
+    "backToHome": "Retour à l'accueil",
+    "notice": "En utilisant Vay Bazar, vous acceptez les présentes conditions d'utilisation. Veuillez les lire attentivement.",
+    "privacyPolicyLink": "Politique de confidentialité",
+    "lastUpdate": "Dernière mise à jour"
+  },
+  "legalNotice": {
+    "title": "Mentions légales",
+    "backToHome": "Retour à l'accueil"
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "backToHome": "Retour à l'accueil",
+    "intro": "Chez Vay Bazar, nous prenons très au sérieux la protection de vos données personnelles. Cette politique explique comment nous collectons, utilisons et protégeons vos informations."
+  },
+  "help": {
+    "title": "Centre d'aide",
+    "subtitle": "Trouvez des réponses à vos questions et apprenez à utiliser Vay Bazar",
+    "backToHome": "Retour à l'accueil",
+    "sections": {
+      "guide": {
+        "title": "Guide d'utilisation",
+        "description": "Apprenez à publier et gérer vos annonces",
+        "button": "Publier une annonce"
+      },
+      "safety": {
+        "title": "Conseils de sécurité",
+        "description": "Découvrez comment échanger en toute sécurité",
+        "button": "Voir les conseils"
+      },
+      "contact": {
+        "title": "Nous contacter",
+        "description": "Besoin d'aide ? Contactez notre équipe",
+        "button": "Envoyer un message"
+      },
+      "report": {
+        "title": "Signaler un problème",
+        "description": "Signalez un contenu inapproprié ou suspect",
+        "button": "Faire un signalement"
+      }
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "howToPost": {
+        "question": "Comment publier une annonce ?",
+        "answer": "Cliquez sur le bouton 'Déposer' dans le header, remplissez le formulaire avec les informations de votre annonce, ajoutez des photos et publiez. Votre annonce sera visible immédiatement."
+      },
+      "howToContact": {
+        "question": "Comment contacter un vendeur ?",
+        "answer": "Sur la page de détail d'une annonce, cliquez sur 'Contacter via WhatsApp' ou utilisez le bouton 'Envoyer un message' pour communiquer via la messagerie interne."
+      },
+      "howToDelete": {
+        "question": "Comment supprimer mon annonce ?",
+        "answer": "Allez dans 'Mes annonces', trouvez l'annonce que vous souhaitez supprimer, cliquez sur les trois points et sélectionnez 'Supprimer'."
+      },
+      "howToReport": {
+        "question": "Comment signaler un problème ?",
+        "answer": "Utilisez la page 'Signaler un problème' accessible depuis le footer ou directement depuis une annonce en cliquant sur le bouton 'Signaler'."
+      }
+    }
+  },
+  "safetyTips": {
+    "title": "Conseils de sécurité",
+    "subtitle": "Protégez-vous lors de vos transactions sur Vay Bazar",
+    "backToHome": "Retour à l'accueil",
+    "important": "Votre sécurité est notre priorité. Suivez ces conseils pour échanger en toute tranquillité.",
+    "tips": {
+      "meetPublic": {
+        "title": "Rencontrez-vous dans un lieu public",
+        "description": "Privilégiez toujours les rencontres dans des endroits fréquentés et sûrs, comme un café, une place publique ou un centre commercial."
+      },
+      "verifyBeforePay": {
+        "title": "Vérifiez l'article avant de payer",
+        "description": "Inspectez soigneusement l'article, testez-le si possible, et assurez-vous qu'il correspond à la description avant tout paiement."
+      },
+      "neverPayAdvance": {
+        "title": "Ne payez jamais à l'avance",
+        "description": "Méfiez-vous des demandes de paiement anticipé. Ne payez qu'après avoir reçu l'article et vérifié qu'il est conforme."
+      },
+      "communicateSafely": {
+        "title": "Communiquez via la plateforme",
+        "description": "Utilisez la messagerie interne de Vay Bazar pour communiquer. Ne partagez jamais vos informations bancaires par message."
+      },
+      "checkProfile": {
+        "title": "Vérifiez le profil du vendeur",
+        "description": "Consultez les avis et les badges du vendeur. Les membres vérifiés et avec de bons avis sont généralement plus fiables."
+      },
+      "reportSuspicious": {
+        "title": "Signalez les comportements suspects",
+        "description": "Si quelque chose vous semble suspect, n'hésitez pas à signaler le problème. Nous prendrons les mesures appropriées."
+      }
+    },
+    "needHelp": {
+      "title": "Besoin d'aide ?",
+      "description": "Si vous avez été victime d'une fraude ou d'un comportement inapproprié, contactez-nous immédiatement.",
+      "contact": "Nous contacter",
+      "report": "Signaler un problème"
+    }
+  },
+  "report": {
+    "title": "Signaler un problème",
+    "subtitle": "Aidez-nous à maintenir une communauté sûre et respectueuse",
+    "backToHome": "Retour à l'accueil",
+    "notice": "Votre signalement sera traité dans les plus brefs délais. Nous prenons tous les signalements au sérieux.",
+    "form": {
+      "title": "Formulaire de signalement",
+      "description": "Remplissez ce formulaire pour nous signaler un contenu inapproprié, une fraude ou un comportement suspect.",
+      "reportType": "Type de signalement",
+      "reportTypePlaceholder": "Sélectionnez le type de problème",
+      "listingId": "ID de l'annonce (optionnel)",
+      "listingIdPlaceholder": "Ex: 123",
+      "email": "Votre email",
+      "emailPlaceholder": "votre@email.com",
+      "descriptionLabel": "Description du problème",
+      "descriptionPlaceholder": "Décrivez en détail le problème rencontré...",
+      "submit": "Envoyer le signalement",
+      "submitting": "Envoi en cours...",
+      "types": {
+        "fraud": "Fraude ou escroquerie",
+        "spam": "Spam ou publicité non sollicitée",
+        "inappropriate": "Contenu inapproprié",
+        "harassment": "Harcèlement ou intimidation",
+        "other": "Autre"
+      }
+    },
+    "success": {
+      "title": "Signalement envoyé",
+      "description": "Merci pour votre signalement. Nous l'examinerons dans les plus brefs délais et prendrons les mesures appropriées.",
+      "backToHome": "Retour à l'accueil"
+    }
+  },
+  "searchBar": {
+    "searchLabel": "Que recherchez-vous ?",
+    "searchPlaceholder": "Ex: voiture, appartement, services...",
+    "categoryLabel": "Catégorie",
+    "categoryPlaceholder": "Toutes",
+    "allCategories": "Toutes catégories",
+    "locationLabel": "Localisation",
+    "locationPlaceholder": "Ville...",
+    "suggestions": "Suggestions",
+    "locations": "Localisations",
+    "searchButton": "Rechercher"
+  }
+}
+

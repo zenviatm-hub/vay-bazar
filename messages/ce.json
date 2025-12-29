@@ -1,0 +1,632 @@
+{
+  "home": {
+    "badge": "Безалх йолу а, гӀоьрта йолу а платформа",
+    "title": "Лахар а, мах а йеш йу хьоьгара",
+    "titleHighlight": "къамелда",
+    "subtitle": "Нохчийн къамелда йолу яздармашна йина платформа. Хьоьгара яздармаш безалх йеш йу, хьай аьтту бехк-бехк баьхкина хьажа.",
+    "securePlatform": "ГӀоьрта платформа",
+    "secureDescription": "Чулацам а, бейдж а йолу система, чӀогӀа декъашхой лахар а, мах а йеш йу. Хьоьгара гӀоьрталлин хьалхара метта йу.",
+    "directCommunication": "Аьтту бехк-бехк йолу йукъаметта",
+    "directDescription": "Аьтту бехк-бехк мах лоьцуш йолу декъашхойца йукъаметта йеш йу хьайна йина месседжийн системан.",
+    "communitySpirit": "Къамелдан дух",
+    "communityDescription": "Нохчийн къамелда йина а, нохчийн къамелда йина а платформа.",
+    "browseCategories": "Категореш лахар",
+    "browseDescription": "Хьайна йина категореш лахар",
+    "viewAllListings": "Массо яздармаш хьажа",
+    "freeAndFast": "Безалх а, хьалха а",
+    "readyToPost": "Хьайна яздармаш йеш йу?",
+    "readyDescription": "Хьайна яздармаш хӀинца а йеш йу, хӀинца а месседжаш йеш йу.",
+    "postFree": "Безалх йеш йу",
+    "recentListings": "Хьалхара яздармаш",
+    "availableListings": "{count} яздармаш йеш йу",
+    "availableListingsSimple": "{count} яздармаш йеш йу"
+  },
+  "header": {
+    "title": "Vay Bazar",
+    "subtitle": "Яздармаш",
+    "messages": "Хаам",
+    "favorites": "Хьалхара",
+    "profile": "Профиль",
+    "myListings": "Сан яздармаш",
+    "signOut": "ГӀоьрту",
+    "signIn": "ЧуйогӀу",
+    "signUp": "ДӀаязде",
+    "deposit": "ДӀаязде",
+    "publish": "Йеш йу"
+  },
+  "footer": {
+    "about": "ДӀаязде",
+    "whoWeAre": "ХӀун ду хьо?",
+    "contactUs": "Хьайна йукъаметта",
+    "legal": "Юридически информаци",
+    "terms": "Лелош йолу условиеш",
+    "privacy": "Конфиденциальности политика",
+    "legalNotice": "Юридически информаци",
+    "help": "ГӀо",
+    "helpCenter": "ГӀон центр",
+    "safetyTips": "ГӀоьрталлин советаш",
+    "report": "Проблема хьажа",
+    "followUs": "Хьайна хьажа",
+    "copyright": "© {year} Vay Bazar - Къамелдан йукъаметта платформа"
+  },
+  "mobileNav": {
+    "home": "Коьрта",
+    "publish": "Йеш йу",
+    "messages": "Хаам",
+    "profile": "Профиль"
+  },
+  "categories": {
+    "free": "Безалх"
+  },
+  "favorites": {
+    "title": "Сан хьалхара",
+    "count": "{count} яздармаш Ӏалашдина",
+    "emptyTitle": "ХӀинца хьалхара яц",
+    "emptyDescription": "Хьайна хьалхара яздармаш тӀетоьхуш, хьайна хьажа",
+    "browseListings": "Яздармаш лахар"
+  },
+  "messages": {
+    "title": "Хаам",
+    "loading": "Хаам чулацам...",
+    "searchPlaceholder": "Йукъаметта лахар...",
+    "noConversations": "Йукъаметташ цакарийна",
+    "viewFullListing": "Массо яздармаш хьажа",
+    "messagePlaceholder": "Хьайна хаам йеш йу...",
+    "selectConversation": "Йукъаметта харжа",
+    "selectConversationDescription": "Йукъаметта харжа, хьайна йукъаметта йеш йу"
+  },
+  "newListing": {
+    "title": "Яздармаш дӀаязде",
+    "subtitle": "Хьайна хӀамаш а, хьал а къамелда йукъаметта",
+    "errors": {
+      "fillRequired": "Массо хьалхара метташ тӀетоьхуш йу",
+      "fillTransportCities": "Хьайна хьалхара метташ тӀетоьхуш йу (хьалхара а, чекхйолу а гӀала)",
+      "fillBtpFields": "Хьайна хьалхара метташ тӀетоьхуш йу (болх а, хьал а)",
+      "invalidWhatsApp": "WhatsApp номер цатоьшу. Формат: +33 6 12 34 56 78 йа 06 12 34 56 78",
+      "createFailed": "Яздармаш йеш йу гӀалат",
+      "createError": "Яздармаш йеш йу гӀалат",
+      "imageProcessing": "Суьрташ чулацам гӀалат"
+    },
+    "basicInfo": {
+      "title": "Коьрта информаци",
+      "description": "Хьайна яздармаш деталешца",
+      "titleLabel": "Яздармаш цӀе",
+      "titlePlaceholder": "Масала: Renault Clio 2018 чӀогӀа хьалха",
+      "characters": "символаш",
+      "categoryLabel": "Категори",
+      "categoryPlaceholder": "Категори харжа",
+      "descriptionLabel": "Деталеш",
+      "descriptionPlaceholder": "Хьайна яздармаш деталешца: хьал, характеристикаш, мах лоьцуш йолу бахьана..."
+    },
+    "transport": {
+      "title": "Транспортан информаци",
+      "description": "Хьалхара а, чекхйолу а гӀала хьажа",
+      "departureCity": "Хьалхара гӀала",
+      "departurePlaceholder": "Масала: Париж",
+      "arrivalCity": "Чекхйолу гӀала",
+      "arrivalPlaceholder": "Масала: Грозный"
+    },
+    "btp": {
+      "title": "Болх а, хьал а",
+      "description": "Хьайна болх а, хьал а хьажа",
+      "skillsLabel": "Болх",
+      "skillsPlaceholder": "Масала: Сантехника, Электрика, Каменщик...",
+      "skillsHint": "Болх запятаяшца йукъаметта",
+      "experienceLabel": "Болхан шо",
+      "experiencePlaceholder": "Масала: 15 шо болх"
+    },
+    "sadaqa": {
+      "message": "ХӀокху категори доларшна йина (Садкъа). Цена автоматически 0€."
+    },
+    "price": {
+      "title": "Цена а, хьал а",
+      "description": "Цена а, хьал а хьажа",
+      "priceLabel": "Цена (€)",
+      "priceHint": "Цена цатоьшу, пусто йеш йу",
+      "sadaqaFree": "Безалх доларшна (Садкъа)",
+      "conditionLabel": "Хьал",
+      "conditionPlaceholder": "Хьал харжа",
+      "condition": {
+        "new": "Керла",
+        "likeNew": "Керла санна",
+        "good": "ЧӀогӀа хьал",
+        "normal": "Оьшу хьал",
+        "parts": "Декъашхойна"
+      },
+      "negotiable": "Цена йукъаметта"
+    },
+    "location": {
+      "title": "Меттиг а, йукъаметта а",
+      "description": "Хьайна йукъаметта",
+      "cityLabel": "ГӀала",
+      "loadingCities": "ГӀаланаш чулацам...",
+      "cityPlaceholder": "Хьайна гӀала (масала: Париж)",
+      "selectCity": "Хьайна гӀала харжа",
+      "whatsappLabel": "WhatsApp номер (рекомендуется)",
+      "whatsappPlaceholder": "+33 6 12 34 56 78 йа 06 12 34 56 78"
+    },
+    "photos": {
+      "title": "Суьрташ",
+      "description": "6 суьрт кхочу (рекомендуется)",
+      "clickToAdd": "Суьрташ тӀетоьхуш, хьажа",
+      "formatHint": "PNG, JPG 10MB кхаччалц ({remaining} йеш йу)"
+    },
+    "actions": {
+      "cancel": "Цатоьшу",
+      "publishing": "Йеш йу...",
+      "publish": "Яздармаш йеш йу"
+    }
+  },
+  "about": {
+    "title": "Vay Bazar дӀаязде",
+    "subtitle": "Нохчийн къамелда йина а, нохчийн къамелда йина а йукъаметта платформа",
+    "backToHome": "Коьрта агӀо",
+    "mission": {
+      "title": "Сан мисси",
+      "description": "Vay Bazar керла а, чӀогӀа а хӀалла йина: къамелда йукъаметта а, хьал а хьажа. ГӀоьрталлин дуьнехь, хьайна гӀоьрталлин метта йу, нохчийн къамелда йолу декъашхой мах а, хьал а йеш йу."
+    },
+    "values": {
+      "community": {
+        "title": "Къамелда",
+        "description": "Къамелда йина а, къамелда йина а, Vay Bazar декъашхойн йукъаметта а, хьал а хьажа."
+      },
+      "secure": {
+        "title": "ГӀоьрта",
+        "description": "Чулацам а, бейдж а йолу система, чӀогӀа декъашхой лахар а, мах а йеш йу. Хьоьгара гӀоьрталлин хьалхара метта йу."
+      },
+      "accessible": {
+        "title": "Йеш йу",
+        "description": "Безалх а, хьалха а платформа. Массо а яздармаш йеш йу, декъашхой йеш йу."
+      },
+      "trust": {
+        "title": "ГӀоьрталлин",
+        "description": "ГӀоьрталлин декъашхойн йукъаметта а, хьал а йеш йу, гӀоьрталлин а, хьал а хьажа."
+      }
+    },
+    "history": {
+      "title": "Сан истори",
+      "paragraph1": "Vay Bazar къамелда йукъаметта а, хьал а йеш йу метта йина. Массо платформаш хьайна хьалхара метташ цатоьшу: къамелда гӀоьрталлин, йукъаметта хьалха, хьайна хьалхара метташ лахар.",
+      "paragraph2": "ХӀинца, Vay Bazar кхин а декъашхой йеш йу, мах а, хьал а йеш йу. Недвижимость а, хьал а, болх а, хьал а, хьайна платформа массо хьалхара метташ лахар."
+    },
+    "join": {
+      "title": "Къамелда йукъаметта",
+      "description": "Хьайна мах а, хьал а йеш йу, йа хьайна къамелда йолу хьалхара метташ лахар, Vay Bazar хьайна йеш йу.",
+      "createAccount": "Аккаунт йеш йу",
+      "browseListings": "Яздармаш лахар"
+    }
+  },
+  "login": {
+    "title": "ЧуйогӀу",
+    "description": "Хьайна аккаунт чуйогӀу",
+    "emailLabel": "Email",
+    "emailPlaceholder": "хьайна@email.com",
+    "passwordLabel": "Пароль",
+    "showPassword": "Пароль хьажа",
+    "hidePassword": "Пароль йеш йу",
+    "submit": "ЧуйогӀу",
+    "connecting": "ЧуйогӀу...",
+    "noAccount": "Аккаунт йеш йу?",
+    "signUp": "ДӀаязде",
+    "errors": {
+      "generic": "ГӀалат хилла"
+    }
+  },
+  "signup": {
+    "title": "ДӀаязде",
+    "description": "Хьайна аккаунт йеш йу, хьалха",
+    "firstNameLabel": "ЦӀе",
+    "firstNamePlaceholder": "Ахмад",
+    "lastNameLabel": "Фамили",
+    "lastNamePlaceholder": "Дудаев",
+    "emailLabel": "Email",
+    "emailPlaceholder": "хьайна@email.com",
+    "phoneLabel": "Телефон",
+    "phonePlaceholder": "+33 6 12 34 56 78 йа 06 12 34 56 78",
+    "locationLabel": "ГӀала",
+    "loadingCities": "ГӀаланаш чулацам...",
+    "locationPlaceholder": "Хьайна гӀала (масала: Париж)",
+    "selectCity": "Хьайна гӀала харжа",
+    "passwordLabel": "Пароль",
+    "confirmPasswordLabel": "Пароль тӀетоьхуш",
+    "showPassword": "Пароль хьажа",
+    "hidePassword": "Пароль йеш йу",
+    "submit": "ДӀаязде",
+    "signingUp": "ДӀаязде...",
+    "alreadyRegistered": "ДӀаяздина?",
+    "signIn": "ЧуйогӀу",
+    "errors": {
+      "passwordMismatch": "Паролаш цатоьшу",
+      "passwordTooShort": "Пароль 6 символаш кхочу",
+      "invalidPhone": "Телефонийн номер цатоьшу. Формат: +33 6 12 34 56 78 йа 06 12 34 56 78",
+      "generic": "ГӀалат хилла"
+    }
+  },
+  "profile": {
+    "title": "Сан профиль",
+    "subtitle": "Хьайна лични информаци",
+    "loading": "Чулацам...",
+    "tabs": {
+      "profile": "Информаци",
+      "security": "ГӀоьрталлин"
+    },
+    "avatar": {
+      "title": "Профилан суьрт",
+      "description": "Суьрт тӀетоьхуш, хьайна профиль",
+      "changePhoto": "Суьрт хийца",
+      "formatHint": "JPG, PNG 5MB кхаччалц"
+    },
+    "personalInfo": {
+      "title": "Лични информаци",
+      "description": "Хьайна коьрта информаци",
+      "firstName": "ЦӀе",
+      "lastName": "Фамили",
+      "email": "Email",
+      "phone": "Телефон",
+      "phonePlaceholder": "+33 6 12 34 56 78 йа 06 12 34 56 78",
+      "location": "ГӀала",
+      "loadingCities": "ГӀаланаш чулацам...",
+      "locationPlaceholder": "Хьайна гӀала (масала: Париж)",
+      "selectCity": "Хьайна гӀала харжа",
+      "currentCityNotFound": "ХӀинца гӀала: {city} (списокехь цакарийна)",
+      "bio": "Биографи",
+      "bioPlaceholder": "Хьайна дуьненахь...",
+      "characters": "символаш"
+    },
+    "password": {
+      "title": "Пароль хийца",
+      "description": "ГӀоьрталлин пароль лело",
+      "currentLabel": "ХӀинца пароль",
+      "newLabel": "Керла пароль",
+      "confirmLabel": "Керла пароль тӀетоьхуш",
+      "showPassword": "Пароль хьажа",
+      "hidePassword": "Пароль йеш йу",
+      "update": "Пароль хийца",
+      "updating": "Хийцам..."
+    },
+    "cancel": "Цатоьшу",
+    "saveChanges": "Хийцамаш Ӏалашде",
+    "saving": "Ӏалашде...",
+    "success": {
+      "profileUpdated": "Профиль хийцина",
+      "passwordUpdated": "Пароль хийцина"
+    },
+    "errors": {
+      "invalidPhone": "Телефонийн номер цатоьшу. Формат: +33 6 12 34 56 78 йа 06 12 34 56 78",
+      "passwordMismatch": "Керла паролаш цатоьшу",
+      "passwordTooShort": "Пароль 6 символаш кхочу",
+      "generic": "ГӀалат хилла"
+    }
+  },
+  "listings": {
+    "title": "Яздармаш",
+    "allListings": "Массо яздармаш",
+    "loading": "Чулацам...",
+    "searchPlaceholder": "Яздармашкахь лахар...",
+    "categoryPlaceholder": "Категори",
+    "allCategories": "Массо категореш",
+    "sortPlaceholder": "Харжа",
+    "sort": {
+      "recent": "Керла",
+      "priceAsc": "Цена хьалха",
+      "priceDesc": "Цена чекх",
+      "popular": "ЧӀогӀа"
+    },
+    "filters": "Фильтраш",
+    "activeFilters": "Активни фильтраш",
+    "negotiable": "Цена йукъаметта",
+    "clearAll": "Массо йеш йу",
+    "foundCount": "{count} яздармаш карийна",
+    "conditions": {
+      "new": "Керла",
+      "likeNew": "Керла санна",
+      "good": "ЧӀогӀа хьал",
+      "normal": "Оьшу хьал",
+      "parts": "Декъашхойна"
+    },
+    "advancedFilters": {
+      "title": "Кхин а фильтраш",
+      "description": "Хьайна лахар хьажа",
+      "location": "Меттиг",
+      "loadingCities": "ГӀаланаш чулацам...",
+      "locationPlaceholder": "ГӀала йа регион...",
+      "allCities": "Массо гӀаланаш",
+      "price": "Цена (€)",
+      "condition": "Хьал",
+      "negotiableOnly": "Цена йукъаметта бен",
+      "clear": "Йеш йу"
+    },
+    "noResults": {
+      "title": "Яздармаш цакарийна",
+      "description": "Хьайна фильтраш хийца",
+      "clearFilters": "Массо фильтраш йеш йу"
+    }
+  },
+  "listingDetail": {
+    "breadcrumb": {
+      "home": "Коьрта",
+      "listings": "Яздармаш"
+    },
+    "price": {
+      "freeDonation": "Безалх (Долар)",
+      "notSpecified": "Цена цатоьшу"
+    },
+    "conditions": {
+      "new": "Керла",
+      "likeNew": "Керла санна",
+      "good": "ЧӀогӀа хьал",
+      "normal": "Оьшу хьал",
+      "parts": "Декъашхойна"
+    },
+    "negotiable": "Цена йукъаметта",
+    "sadaqaBadge": "Садкъа (Долар)",
+    "views": "{count} хьажа",
+    "transport": {
+      "route": "Маршрут"
+    },
+    "btp": {
+      "title": "Болх а, хьал а",
+      "skills": "Болх",
+      "experience": "Хьал"
+    },
+    "description": "Деталеш",
+    "share": "Йукъаметта",
+    "report": "Хьажа",
+    "whatsappMessage": "Салам, хьайна яздармашна хьажа: {title}",
+    "seller": {
+      "title": "Мах лоьцуш йолу",
+      "verified": "Амана",
+      "member": "Къамелда йолу декъашхо",
+      "editListing": "Яздармаш хийца",
+      "yourListing": "Хьайна яздармаш йу",
+      "contactWhatsApp": "WhatsApp йукъаметта",
+      "call": "ДӀадазде"
+    },
+    "safetyTips": {
+      "title": "ГӀоьрталлин советаш",
+      "meetPublic": "Йукъаметта йеш йу метта",
+      "verifyBeforePay": "Мах лоьцуш йолу хьалха хьажа",
+      "neverPayAdvance": "Хьалха цатоьшу",
+      "reportSuspicious": "Хьажа хьалхара метташ"
+    }
+  },
+  "myListings": {
+    "title": "Сан яздармаш",
+    "subtitle": "Хьайна яздармаш а, хьал а хьажа",
+    "newListing": "Керла яздармаш",
+    "price": {
+      "notSpecified": "Цена цатоьшу"
+    },
+    "views": "{count} хьажа",
+    "status": {
+      "active": "Активни",
+      "sold": "Мах лоьцуш йолу",
+      "expired": "Чекхйолу",
+      "draft": "Бруйон"
+    },
+    "stats": {
+      "active": "Активни яздармаш",
+      "totalViews": "Массо хьажа",
+      "sold": "Мах лоьцуш йолу яздармаш",
+      "drafts": "Бруйонаш"
+    },
+    "tabs": {
+      "active": "Активни ({count})",
+      "sold": "Мах лоьцуш йолу ({count})",
+      "expired": "Чекхйолу ({count})",
+      "drafts": "Бруйонаш ({count})"
+    },
+    "actions": {
+      "view": "Яздармаш хьажа",
+      "edit": "Хийца",
+      "deactivate": "Йеш йу",
+      "delete": "ДӀадаккха"
+    },
+    "empty": {
+      "active": "Активни яздармаш йеш йу",
+      "sold": "Мах лоьцуш йолу яздармаш йеш йу",
+      "expired": "Чекхйолу яздармаш йеш йу",
+      "drafts": "Бруйонаш йеш йу",
+      "createFirst": "Хьайна хьалхара яздармаш йеш йу"
+    }
+  },
+  "userProfile": {
+    "member": "Къамелда йолу декъашхо",
+    "viewAllReviews": "Массо чулацам хьажа",
+    "about": "ДӀаязде",
+    "memberSince": "Декъашхо {date} дуьйна",
+    "activeListings": "{count} активни яздармаш",
+    "userListings": "{name} яздармаш",
+    "listingsCount": "{count} активни яздармаш",
+    "noActiveListings": "ХӀинца активни яздармаш йеш йу"
+  },
+  "userReviews": {
+    "title": "Чулацам а, рекомендаци а",
+    "backToProfile": "Профиль агӀо",
+    "reviewsCount": "{count} чулацам",
+    "noReviews": {
+      "title": "ХӀинца чулацам йеш йу",
+      "description": "Хьалхара чулацам хӀинца а хьажа."
+    }
+  },
+  "contact": {
+    "title": "Хьайна йукъаметта",
+    "subtitle": "Хьайна хьалхара метташ йеш йу? Хьайна йукъаметта.",
+    "backToHome": "Коьрта агӀо",
+    "successMessage": "Хьайна месседжан бахьана ду! Хьайна хьалхара метташ йеш йу.",
+    "form": {
+      "title": "Месседж дӀаязде",
+      "description": "Хьайна хьалхара метташ йеш йу, хьайна хьалхара метташ йеш йу.",
+      "firstName": "ЦӀе",
+      "lastName": "Фамили",
+      "email": "Email",
+      "subject": "Тема",
+      "message": "Месседж",
+      "submit": "Месседж дӀаязде",
+      "sending": "ДӀаязде..."
+    },
+    "contactInfo": {
+      "email": {
+        "title": "Email",
+        "value": "contact@vaybazar.fr"
+      },
+      "phone": {
+        "title": "Телефон",
+        "value": "+33 1 23 45 67 89"
+      },
+      "social": {
+        "title": "Социалан сеть",
+        "description": "Хьайна хьалхара метташ йеш йу."
+      }
+    }
+  },
+  "leaveReview": {
+    "title": "Чулацам дӀаязде",
+    "back": "АгӀо",
+    "loading": "Чулацам..."
+  },
+  "cgu": {
+    "title": "Лелош йолу условиеш",
+    "backToHome": "Коьрта агӀо",
+    "notice": "Vay Bazar лелош йу, хьайна хьалхара метташ йеш йу. Хьайна хьалхара метташ йеш йу.",
+    "privacyPolicyLink": "Конфиденциальности политика",
+    "lastUpdate": "Хьалхара хийцам"
+  },
+  "legalNotice": {
+    "title": "Юридически информаци",
+    "backToHome": "Коьрта агӀо"
+  },
+  "privacy": {
+    "title": "Конфиденциальности политика",
+    "backToHome": "Коьрта агӀо",
+    "intro": "Vay Bazar, хьайна лични даташ гӀоьрталлин хьалхара метта йу. Хьайна хьалхара метташ йеш йу."
+  },
+  "help": {
+    "title": "ГӀон центр",
+    "subtitle": "Хьайна хьалхара метташ лахар, Vay Bazar лело",
+    "backToHome": "Коьрта агӀо",
+    "sections": {
+      "guide": {
+        "title": "Лелош йолу гӀо",
+        "description": "Хьайна яздармаш йеш йу, хьал а хьажа",
+        "button": "Яздармаш йеш йу"
+      },
+      "safety": {
+        "title": "ГӀоьрталлин советаш",
+        "description": "ГӀоьрталлин йукъаметта лахар",
+        "button": "Советаш хьажа"
+      },
+      "contact": {
+        "title": "Хьайна йукъаметта",
+        "description": "ГӀо йеш йу? Хьайна йукъаметта",
+        "button": "Месседж дӀаязде"
+      },
+      "report": {
+        "title": "Проблема хьажа",
+        "description": "Хьалхара метташ хьажа",
+        "button": "Хьажа"
+      }
+    },
+    "faq": {
+      "title": "Хьалхара метташ",
+      "howToPost": {
+        "question": "Яздармаш йеш йу?",
+        "answer": "Хьайна яздармаш йеш йу, хьайна яздармаш йеш йу, хьайна яздармаш йеш йу."
+      },
+      "howToContact": {
+        "question": "Мах лоьцуш йолу йукъаметта?",
+        "answer": "Яздармашкахь, 'WhatsApp йукъаметта' хьажа, йа 'Месседж дӀаязде' хьажа."
+      },
+      "howToDelete": {
+        "question": "Сан яздармаш дӀадаккха?",
+        "answer": "'Сан яздармаш' агӀо, яздармаш лахар, дӀадаккха."
+      },
+      "howToReport": {
+        "question": "Проблема хьажа?",
+        "answer": "'Проблема хьажа' агӀо лело, йа яздармашкахь 'Хьажа' хьажа."
+      }
+    }
+  },
+  "safetyTips": {
+    "title": "ГӀоьрталлин советаш",
+    "subtitle": "Хьайна гӀоьрталлин хьалхара метташ",
+    "backToHome": "Коьрта агӀо",
+    "important": "Хьайна гӀоьрталлин хьалхара метта йу. Хьайна хьалхара метташ лахар.",
+    "tips": {
+      "meetPublic": {
+        "title": "Йукъаметта йеш йу метта",
+        "description": "Йукъаметта йеш йу метта, кафе, метта, йа метта."
+      },
+      "verifyBeforePay": {
+        "title": "Мах лоьцуш йолу хьалха хьажа",
+        "description": "Мах лоьцуш йолу хьалха хьажа, хьалха хьажа, хьалха хьажа."
+      },
+      "neverPayAdvance": {
+        "title": "Хьалха цатоьшу",
+        "description": "Хьалхара метташ лахар. Хьалхара метташ лахар."
+      },
+      "communicateSafely": {
+        "title": "Платформа йукъаметта",
+        "description": "Vay Bazar месседжийн системан лело. Хьайна банкан даташ цатоьшу."
+      },
+      "checkProfile": {
+        "title": "Мах лоьцуш йолу профиль хьажа",
+        "description": "Чулацам а, бейдж а хьажа. ЧӀогӀа декъашхой чӀогӀа."
+      },
+      "reportSuspicious": {
+        "title": "Хьалхара метташ хьажа",
+        "description": "Хьалхара метташ лахар, хьалхара метташ хьажа. Хьайна хьалхара метташ йеш йу."
+      }
+    },
+    "needHelp": {
+      "title": "ГӀо йеш йу?",
+      "description": "Хьайна хьалхара метташ лахар, хьайна йукъаметта.",
+      "contact": "Хьайна йукъаметта",
+      "report": "Проблема хьажа"
+    }
+  },
+  "report": {
+    "title": "Проблема хьажа",
+    "subtitle": "Хьайна гӀоьрталлин хьалхара метташ",
+    "backToHome": "Коьрта агӀо",
+    "notice": "Хьайна хьалхара метташ йеш йу. Хьайна хьалхара метташ йеш йу.",
+    "form": {
+      "title": "Хьалхара метташ",
+      "description": "Хьайна хьалхара метташ йеш йу, хьалхара метташ йеш йу.",
+      "reportType": "Хьалхара метташ",
+      "reportTypePlaceholder": "Хьалхара метташ харжа",
+      "listingId": "Яздармаш ID (йеш йу)",
+      "listingIdPlaceholder": "Масала: 123",
+      "email": "Хьайна email",
+      "emailPlaceholder": "хьайна@email.com",
+      "descriptionLabel": "Проблеман деталеш",
+      "descriptionPlaceholder": "Проблеман деталеш...",
+      "submit": "Хьалхара метташ дӀаязде",
+      "submitting": "ДӀаязде...",
+      "types": {
+        "fraud": "Мошенничество йа обман",
+        "spam": "Спам йа нежелательная реклама",
+        "inappropriate": "Неподходящий контент",
+        "harassment": "Харассмент йа запугивание",
+        "other": "Кхин а"
+      }
+    },
+    "success": {
+      "title": "Хьалхара метташ дӀаяздина",
+      "description": "Хьайна хьалхара метташ бахьана ду. Хьайна хьалхара метташ йеш йу.",
+      "backToHome": "Коьрта агӀо"
+    }
+  },
+  "searchBar": {
+    "searchLabel": "Хьайна хьалхара метташ лахар?",
+    "searchPlaceholder": "Масала: машин, квартира, хьал...",
+    "categoryLabel": "Категори",
+    "categoryPlaceholder": "Массо",
+    "allCategories": "Массо категореш",
+    "locationLabel": "Меттиг",
+    "locationPlaceholder": "ГӀала...",
+    "suggestions": "Советаш",
+    "locations": "Меттигаш",
+    "searchButton": "Лахар"
+  }
+}
+

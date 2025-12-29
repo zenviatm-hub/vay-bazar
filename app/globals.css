@@ -1,0 +1,318 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Palette moderne: Blanc pur, Gris élégants, Vert émeraude vibrant */
+  --background: oklch(0.99 0 0);
+  --foreground: oklch(0.09 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.09 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.09 0 0);
+  --primary: oklch(0.45 0.15 170); /* Vert émeraude vibrant moderne */
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.15 0 0);
+  --muted: oklch(0.96 0.005 220);
+  --muted-foreground: oklch(0.45 0.01 220);
+  --accent: oklch(0.6 0.2 35); /* Orange moderne et vibrant */
+  --accent-foreground: oklch(0.99 0 0);
+  --destructive: oklch(0.55 0.25 25);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.93 0.005 220);
+  --input: oklch(0.95 0.005 220);
+  --ring: oklch(0.45 0.15 170);
+  --sadaqa: oklch(0.58 0.15 230); /* Bleu moderne pour dons */
+  --sadaqa-foreground: oklch(0.99 0 230);
+  --verified-badge: oklch(0.5 0.18 155); /* Badge vert moderne */
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 1rem; /* Bords encore plus arrondis pour look ultra-moderne */
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.1 0.01 220);
+  --foreground: oklch(0.98 0 0);
+  --card: oklch(0.13 0.01 220);
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.13 0.01 220);
+  --popover-foreground: oklch(0.98 0 0);
+  --primary: oklch(0.55 0.15 170);
+  --primary-foreground: oklch(0.1 0.01 220);
+  --secondary: oklch(0.18 0.01 220);
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.2 0.01 220);
+  --muted-foreground: oklch(0.6 0.01 220);
+  --accent: oklch(0.65 0.2 35);
+  --accent-foreground: oklch(0.1 0.01 220);
+  --destructive: oklch(0.45 0.2 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.22 0.01 220);
+  --input: oklch(0.22 0.01 220);
+  --ring: oklch(0.55 0.15 170);
+  --sadaqa: oklch(0.62 0.15 230);
+  --sadaqa-foreground: oklch(0.1 0.01 230);
+  --verified-badge: oklch(0.58 0.18 155);
+}
+
+@theme inline {
+  /* Typographie moderne et très lisible */
+  --font-sans: "Geist", "Geist Fallback", system-ui, -apple-system, sans-serif;
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sadaqa: var(--sadaqa);
+  --color-sadaqa-foreground: var(--sadaqa-foreground);
+  --color-verified-badge: var(--verified-badge);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    /* Taille optimale pour lecture confortable */
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: -0.011em;
+  }
+
+  /* Typographie moderne avec hiérarchie claire */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  /* Animations fluides globales */
+  * {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer components {
+  /* Ombres modernes et subtiles */
+  .shadow-soft {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03), 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  .shadow-soft-lg {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .shadow-soft-xl {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04), 0 12px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Effet glassmorphism moderne */
+  .glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .glass-dark {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Correction de l'espace manquant entre les classes Tailwind */
+  /* Badge vérifié Amana moderne */
+  /* Suppression de la classe verified-badge problématique */
+
+  /* Barre de navigation mobile moderne avec effet glassmorphism */
+  .mobile-nav-bar {
+    @apply fixed bottom-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-[12px] border-t border-white/30;
+    @apply md:hidden;
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.08);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .mobile-nav-item {
+    @apply flex flex-1 flex-col items-center justify-center gap-1.5 py-3 text-xs font-medium transition-all duration-200;
+    @apply hover:scale-105;
+  }
+
+  .mobile-nav-item.active {
+    @apply text-primary;
+  }
+
+  .mobile-nav-item.active svg {
+    @apply scale-110;
+  }
+
+  /* Espacement pour navigation mobile */
+  .content-with-mobile-nav {
+    @apply pb-24 md:pb-0;
+  }
+
+  /* Boutons modernes avec hover effects */
+  button,
+  a[role="button"] {
+    @apply transition-all duration-200;
+  }
+
+  button:active,
+  a[role="button"]:active {
+    @apply scale-[0.98];
+  }
+
+  /* Cartes modernes */
+  .card-modern {
+    @apply rounded-2xl bg-card p-6 transition-all duration-300;
+    @apply hover:-translate-y-1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03), 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  .card-modern:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Inputs modernes */
+  input,
+  textarea,
+  select {
+    @apply rounded-xl border-2 border-input bg-background px-4 py-3 text-base transition-all duration-200;
+    @apply focus:border-primary focus:ring-4 focus:ring-primary/10;
+  }
+
+  /* Badges modernes */
+  .badge-modern {
+    @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium shadow-sm;
+  }
+
+  /* Effet hover sur les liens */
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  /* Gradients modernes */
+  .gradient-primary {
+    background: linear-gradient(135deg, var(--primary) 0%, oklch(0.55 0.18 165) 100%);
+  }
+
+  .gradient-accent {
+    background: linear-gradient(135deg, var(--accent) 0%, oklch(0.7 0.22 40) 100%);
+  }
+
+  .gradient-sadaqa {
+    background: linear-gradient(135deg, var(--sadaqa) 0%, oklch(0.65 0.18 235) 100%);
+  }
+}
+
+/* Animations personnalisées */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+/* Scroll bars modernes */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted-foreground);
+  border-radius: 10px;
+  border: 2px solid var(--muted);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
