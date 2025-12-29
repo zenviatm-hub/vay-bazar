@@ -10,8 +10,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Disable static optimization to prevent prerendering issues with cookies()
-  output: 'standalone',
 }
 
 export default withNextIntl(nextConfig)

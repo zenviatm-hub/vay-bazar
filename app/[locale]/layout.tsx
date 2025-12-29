@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
+export const dynamicParams = true
 
 // Empêcher la génération statique des routes
 export function generateStaticParams() {
