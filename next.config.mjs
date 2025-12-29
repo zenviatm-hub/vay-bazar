@@ -10,6 +10,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Force dynamic rendering for all routes to prevent static generation issues
+  experimental: {
+    dynamicIO: true,
+  },
 }
 
 export default withNextIntl(nextConfig)
