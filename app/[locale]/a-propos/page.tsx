@@ -1,15 +1,14 @@
+"use client"
+
 import { Link } from "@/lib/navigation"
 import { HeaderClient } from "@/components/header-client"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowLeft, Heart, Users, Shield, Handshake } from "lucide-react"
-import { getTranslations } from "next-intl/server"
+import { useTranslations } from "next-intl"
 
-export const dynamic = 'force-dynamic'
-export const revalidate = 0
-
-export default async function AboutPage() {
-  const t = await getTranslations("about")
+export default function AboutPage() {
+  const t = useTranslations("about")
   
   return (
     <div className="min-h-screen bg-background">
