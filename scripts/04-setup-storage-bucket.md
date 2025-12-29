@@ -38,3 +38,4 @@ Après avoir créé le bucket, configurez les politiques de sécurité :
 Vous pouvez aussi créer le bucket via l'API Supabase en utilisant le service role key, mais la méthode via le dashboard est plus simple et recommandée.
 
 
+

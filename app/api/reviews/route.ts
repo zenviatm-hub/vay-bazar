@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server"
 import { getCurrentUser } from "@/lib/auth"
 import { supabaseAdmin } from "@/lib/supabase-admin"
 
+export const dynamic = 'force-dynamic'
+
 export async function POST(request: NextRequest) {
   try {
     // Vérifier l'utilisateur connecté
@@ -158,5 +160,6 @@ async function checkAndAssignBadges(userId: number) {
     console.error("Erreur lors de l'attribution des badges:", error)
   }
 }
+
 
 

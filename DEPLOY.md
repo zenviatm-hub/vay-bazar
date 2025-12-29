@@ -142,3 +142,4 @@ Vercel détectera automatiquement le push et redéploiera votre site.
 - Documentation Next.js sur Vercel : https://vercel.com/docs/frameworks/nextjs
 - Support Vercel : https://vercel.com/support
 
+

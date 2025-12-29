@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html suppressHydrationWarning>
+    <html lang="fr" suppressHydrationWarning>
       <body className={`${geist.className} ${geistMono.className} font-sans antialiased`} suppressHydrationWarning>
         {children}
       </body>

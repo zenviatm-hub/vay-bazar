@@ -63,3 +63,4 @@ export function translateCategoryName(categoryName: string, locale: string): str
   return categoryTranslations[locale as keyof typeof categoryTranslations]?.[categoryName] || categoryName
 }
 
+
