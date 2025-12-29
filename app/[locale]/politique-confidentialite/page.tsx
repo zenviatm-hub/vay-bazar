@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft, Shield, Eye, Lock, UserCheck, Trash2 } from "lucide-react"
 import { getTranslations } from "next-intl/server"
 
+export const dynamic = 'force-dynamic'
+
 export default async function PolitiqueConfidentialitePage() {
   const t = await getTranslations("privacy")
   

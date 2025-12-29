@@ -5,6 +5,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowLeft, HelpCircle, MessageSquare, Book, Shield } from "lucide-react"
 import { getTranslations } from "next-intl/server"
 
+export const dynamic = 'force-dynamic'
+
 export default async function HelpPage() {
   const t = await getTranslations("help")
 

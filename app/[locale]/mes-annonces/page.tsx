@@ -18,6 +18,8 @@ import Image from "next/image"
 import { redirect } from "@/lib/navigation"
 import { getTranslations } from "next-intl/server"
 
+export const dynamic = 'force-dynamic'
+
 export default async function MyListingsPage() {
   const t = await getTranslations("myListings")
   const user = await getCurrentUser()

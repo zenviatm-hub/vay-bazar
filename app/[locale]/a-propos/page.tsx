@@ -5,6 +5,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ArrowLeft, Heart, Users, Shield, Handshake } from "lucide-react"
 import { getTranslations } from "next-intl/server"
 
+export const dynamic = 'force-dynamic'
+
 export default async function AboutPage() {
   const t = await getTranslations("about")
   return (

@@ -17,6 +17,8 @@ import { LeaveReviewForm } from "@/components/leave-review-form"
 import { getCurrentUser } from "@/lib/auth"
 import { MapPin, Calendar, Package, TrendingUp, MessageSquare } from "lucide-react"
 
+export const dynamic = 'force-dynamic'
+
 export default async function UserProfilePage({ params }: { params: Promise<{ id: string }> }) {
   const t = await getTranslations("userProfile")
   const { id } = await params

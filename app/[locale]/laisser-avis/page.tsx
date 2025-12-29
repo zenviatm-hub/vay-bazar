@@ -7,6 +7,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ArrowLeft } from "lucide-react"
 import { LeaveReviewForm } from "@/components/leave-review-form"
 
+export const dynamic = 'force-dynamic'
+
 export default async function LeaveReviewPage() {
   const t = await getTranslations("leaveReview")
   

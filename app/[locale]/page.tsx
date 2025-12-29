@@ -7,6 +7,8 @@ import { ArrowRight, Shield, MessageCircle, Sparkles, TrendingUp, Users } from "
 import { Link } from "@/lib/navigation"
 import { getTranslations } from "next-intl/server"
 
+export const dynamic = 'force-dynamic'
+
 export default async function HomePage() {
   const t = await getTranslations("home")
 

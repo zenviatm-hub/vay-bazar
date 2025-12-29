@@ -5,6 +5,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ArrowLeft, Shield, Users, Eye, AlertTriangle, Phone } from "lucide-react"
 import { getTranslations } from "next-intl/server"
 
+export const dynamic = 'force-dynamic'
+
 export default async function SafetyTipsPage() {
   const t = await getTranslations("safetyTips")
 

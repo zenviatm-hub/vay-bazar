@@ -10,6 +10,8 @@ import { Heart } from "lucide-react"
 import { Link } from "@/lib/navigation"
 import { getTranslations } from "next-intl/server"
 
+export const dynamic = 'force-dynamic'
+
 export default async function FavoritesPage() {
   const t = await getTranslations("favorites")
   const user = await getCurrentUser()

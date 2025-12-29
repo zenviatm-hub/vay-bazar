@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft, AlertCircle } from "lucide-react"
 import { getTranslations } from "next-intl/server"
 
+export const dynamic = 'force-dynamic'
+
 export default async function CGUPage() {
   const t = await getTranslations("cgu")
   

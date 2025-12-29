@@ -7,6 +7,8 @@ import { ArrowLeft, Star } from "lucide-react"
 import { getReviews, getUserStats } from "@/lib/reviews"
 import { ReviewCard } from "@/components/review-card"
 
+export const dynamic = 'force-dynamic'
+
 export default async function UserReviewsPage({ params }: { params: Promise<{ id: string }> }) {
   const t = await getTranslations("userReviews")
   const { id } = await params
