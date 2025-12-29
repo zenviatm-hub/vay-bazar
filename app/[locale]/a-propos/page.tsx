@@ -1,23 +1,14 @@
+"use client"
+
 import { Link } from "@/lib/navigation"
 import { HeaderClient } from "@/components/header-client"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowLeft, Heart, Users, Shield, Handshake } from "lucide-react"
-import { getTranslations } from "next-intl/server"
-import { unstable_setRequestLocale } from 'next-intl/server'
+import { useTranslations } from "next-intl"
 
-export const dynamic = 'force-dynamic'
-export const dynamicParams = true
-export const runtime = 'nodejs'
-
-export default async function AboutPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
-  const { locale } = await params
-  unstable_setRequestLocale(locale)
-  const t = await getTranslations("about")
+export default function AboutPage() {
+  const t = useTranslations("about")
   return (
     <div className="min-h-screen bg-background">
       <HeaderClient />
