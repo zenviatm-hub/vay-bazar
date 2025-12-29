@@ -6,10 +6,30 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowLeft, Heart, Users, Shield, Handshake } from "lucide-react"
 import { useTranslations } from "next-intl"
-import { Suspense } from "react"
+import { Suspense, useEffect, useState } from "react"
+import type { User } from "@/lib/auth"
 
 function AboutContent() {
   const t = useTranslations("about")
+  const [user, setUser] = useState<User | null>(null)
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    async function loadUser() {
+      try {
+        const response = await fetch("/api/user")
+        if (response.ok) {
+          const userData = await response.json()
+          setUser(userData)
+        }
+      } catch (error) {
+        console.error("Erreur lors du chargement de l'utilisateur:", error)
+      } finally {
+        setLoading(false)
+      }
+    }
+    loadUser()
+  }, [])
   
   return (
     <div className="min-h-screen bg-background">
@@ -103,9 +123,11 @@ function AboutContent() {
             {t("join.description")}
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <Button asChild size="lg">
-              <Link href="/inscription">{t("join.createAccount")}</Link>
-            </Button>
+            {!loading && !user && (
+              <Button asChild size="lg">
+                <Link href="/inscription">{t("join.createAccount")}</Link>
+              </Button>
+            )}
             <Button asChild variant="outline" size="lg">
               <Link href="/annonces">{t("join.browseListings")}</Link>
             </Button>
