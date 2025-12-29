@@ -16,6 +16,8 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Slider } from "@/components/ui/slider"
 import { Search, SlidersHorizontal, X } from "lucide-react"
 
+export const dynamic = 'force-dynamic'
+
 export default function AnnoncesPage() {
   const t = useTranslations("listings")
   const [searchQuery, setSearchQuery] = useState("")
