@@ -462,3 +462,75 @@
 {"location":"middleware.ts:21","message":"Middleware after intlMiddleware","data":{"url":"http://localhost:3000/fr","pathname":"/fr","responseStatus":200,"responseUrl":null},"timestamp":1767026396874,"sessionId":"debug-session","runId":"run1","hypothesisId":"A"}
 {"location":"middleware.ts:18","message":"Middleware entry","data":{"url":"http://localhost:3000/fr","pathname":"/fr"},"timestamp":1767026483448,"sessionId":"debug-session","runId":"run1","hypothesisId":"A"}
 {"location":"middleware.ts:21","message":"Middleware after intlMiddleware","data":{"url":"http://localhost:3000/fr","pathname":"/fr","responseStatus":200,"responseUrl":null},"timestamp":1767026483449,"sessionId":"debug-session","runId":"run1","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:49","message":"LocaleLayout entry","data":{"phase":"unknown","nodeEnv":"development"},"timestamp":1767040122656,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:56","message":"Locale extracted","data":{"locale":"fr"},"timestamp":1767040122697,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:64","message":"Before getMessages()","data":{"locale":"fr"},"timestamp":1767040122698,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"app/[locale]/layout.tsx:67","message":"After getMessages()","data":{"hasMessages":true,"messageKeys":26},"timestamp":1767040122725,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"app/[locale]/layout.tsx:49","message":"LocaleLayout entry","data":{"phase":"unknown","nodeEnv":"development"},"timestamp":1767040122986,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:56","message":"Locale extracted","data":{"locale":"fr"},"timestamp":1767040123020,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:64","message":"Before getMessages()","data":{"locale":"fr"},"timestamp":1767040123021,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"app/[locale]/layout.tsx:67","message":"After getMessages()","data":{"hasMessages":true,"messageKeys":26},"timestamp":1767040123047,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"app/[locale]/layout.tsx:49","message":"LocaleLayout entry","data":{"phase":"unknown","nodeEnv":"development"},"timestamp":1767040123260,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:56","message":"Locale extracted","data":{"locale":"fr"},"timestamp":1767040123282,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:64","message":"Before getMessages()","data":{"locale":"fr"},"timestamp":1767040123283,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"app/[locale]/layout.tsx:67","message":"After getMessages()","data":{"hasMessages":true,"messageKeys":26},"timestamp":1767040123312,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"app/[locale]/layout.tsx:49","message":"LocaleLayout entry","data":{"phase":"unknown","nodeEnv":"development"},"timestamp":1767040123376,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:56","message":"Locale extracted","data":{"locale":"fr"},"timestamp":1767040123392,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:64","message":"Before getMessages()","data":{"locale":"fr"},"timestamp":1767040123392,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"app/[locale]/layout.tsx:67","message":"After getMessages()","data":{"hasMessages":true,"messageKeys":26},"timestamp":1767040123414,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"app/[locale]/layout.tsx:49","message":"LocaleLayout entry","data":{"phase":"unknown","nodeEnv":"development"},"timestamp":1767040132206,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:56","message":"Locale extracted","data":{"locale":"fr"},"timestamp":1767040132247,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:64","message":"Before getMessages()","data":{"locale":"fr"},"timestamp":1767040132248,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"i18n.ts:8","message":"getRequestConfig entry","data":{"phase":"unknown","hasRequestLocale":true},"timestamp":1767040132250,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"i18n.ts:11","message":"Locale resolved","data":{"locale":"fr","isDefault":true},"timestamp":1767040132272,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"i18n.ts:19","message":"Before message import","data":{"locale":"fr"},"timestamp":1767040132273,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"app/[locale]/layout.tsx:67","message":"After getMessages()","data":{"hasMessages":true,"messageKeys":26},"timestamp":1767040132290,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"app/[locale]/layout.tsx:49","message":"LocaleLayout entry","data":{"phase":"unknown","nodeEnv":"development"},"timestamp":1767040132529,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:56","message":"Locale extracted","data":{"locale":"fr"},"timestamp":1767040132566,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:64","message":"Before getMessages()","data":{"locale":"fr"},"timestamp":1767040132568,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"i18n.ts:8","message":"getRequestConfig entry","data":{"phase":"unknown","hasRequestLocale":true},"timestamp":1767040132569,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"i18n.ts:11","message":"Locale resolved","data":{"locale":"fr","isDefault":true},"timestamp":1767040132592,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"i18n.ts:19","message":"Before message import","data":{"locale":"fr"},"timestamp":1767040132593,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"app/[locale]/layout.tsx:67","message":"After getMessages()","data":{"hasMessages":true,"messageKeys":26},"timestamp":1767040132607,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"app/[locale]/layout.tsx:49","message":"LocaleLayout entry","data":{"phase":"unknown","nodeEnv":"development"},"timestamp":1767040132877,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:56","message":"Locale extracted","data":{"locale":"fr"},"timestamp":1767040132897,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"i18n.ts:8","message":"getRequestConfig entry","data":{"phase":"unknown","hasRequestLocale":true},"timestamp":1767040132899,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"app/[locale]/layout.tsx:64","message":"Before getMessages()","data":{"locale":"fr"},"timestamp":1767040132898,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"i18n.ts:11","message":"Locale resolved","data":{"locale":"fr","isDefault":true},"timestamp":1767040132912,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"i18n.ts:19","message":"Before message import","data":{"locale":"fr"},"timestamp":1767040132913,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"app/[locale]/layout.tsx:67","message":"After getMessages()","data":{"hasMessages":true,"messageKeys":26},"timestamp":1767040132946,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"app/[locale]/layout.tsx:49","message":"LocaleLayout entry","data":{"phase":"unknown","nodeEnv":"development"},"timestamp":1767040133031,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:56","message":"Locale extracted","data":{"locale":"fr"},"timestamp":1767040133047,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"i18n.ts:8","message":"getRequestConfig entry","data":{"phase":"unknown","hasRequestLocale":true},"timestamp":1767040133050,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"app/[locale]/layout.tsx:64","message":"Before getMessages()","data":{"locale":"fr"},"timestamp":1767040133048,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"i18n.ts:11","message":"Locale resolved","data":{"locale":"fr","isDefault":true},"timestamp":1767040133067,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"i18n.ts:19","message":"Before message import","data":{"locale":"fr"},"timestamp":1767040133068,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"app/[locale]/layout.tsx:67","message":"After getMessages()","data":{"hasMessages":true,"messageKeys":26},"timestamp":1767040133097,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"app/[locale]/layout.tsx:49","message":"LocaleLayout entry","data":{"phase":"unknown","nodeEnv":"development"},"timestamp":1767040150328,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:56","message":"Locale extracted","data":{"locale":"fr"},"timestamp":1767040150348,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:64","message":"Before getMessages()","data":{"locale":"fr"},"timestamp":1767040150349,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"i18n.ts:8","message":"getRequestConfig entry","data":{"phase":"unknown","hasRequestLocale":true},"timestamp":1767040150350,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"i18n.ts:11","message":"Locale resolved","data":{"locale":"fr","isDefault":true},"timestamp":1767040150375,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"i18n.ts:19","message":"Before message import","data":{"locale":"fr"},"timestamp":1767040150376,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"app/[locale]/layout.tsx:67","message":"After getMessages()","data":{"hasMessages":true,"messageKeys":26},"timestamp":1767040150417,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"app/[locale]/layout.tsx:49","message":"LocaleLayout entry","data":{"phase":"unknown","nodeEnv":"development"},"timestamp":1767040150695,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:56","message":"Locale extracted","data":{"locale":"fr"},"timestamp":1767040150737,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:64","message":"Before getMessages()","data":{"locale":"fr"},"timestamp":1767040150739,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"i18n.ts:8","message":"getRequestConfig entry","data":{"phase":"unknown","hasRequestLocale":true},"timestamp":1767040150740,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"i18n.ts:11","message":"Locale resolved","data":{"locale":"fr","isDefault":true},"timestamp":1767040150763,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"i18n.ts:19","message":"Before message import","data":{"locale":"fr"},"timestamp":1767040150763,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"app/[locale]/layout.tsx:67","message":"After getMessages()","data":{"hasMessages":true,"messageKeys":26},"timestamp":1767040150782,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"app/[locale]/layout.tsx:49","message":"LocaleLayout entry","data":{"phase":"unknown","nodeEnv":"development"},"timestamp":1767040150985,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:56","message":"Locale extracted","data":{"locale":"fr"},"timestamp":1767040151003,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"i18n.ts:8","message":"getRequestConfig entry","data":{"phase":"unknown","hasRequestLocale":true},"timestamp":1767040151005,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"app/[locale]/layout.tsx:64","message":"Before getMessages()","data":{"locale":"fr"},"timestamp":1767040151004,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"i18n.ts:11","message":"Locale resolved","data":{"locale":"fr","isDefault":true},"timestamp":1767040151019,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"i18n.ts:19","message":"Before message import","data":{"locale":"fr"},"timestamp":1767040151019,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"app/[locale]/layout.tsx:67","message":"After getMessages()","data":{"hasMessages":true,"messageKeys":26},"timestamp":1767040151053,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"app/[locale]/layout.tsx:49","message":"LocaleLayout entry","data":{"phase":"unknown","nodeEnv":"development"},"timestamp":1767040151117,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:56","message":"Locale extracted","data":{"locale":"fr"},"timestamp":1767040151132,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"A"}
+{"location":"app/[locale]/layout.tsx:64","message":"Before getMessages()","data":{"locale":"fr"},"timestamp":1767040151134,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
+{"location":"i18n.ts:8","message":"getRequestConfig entry","data":{"phase":"unknown","hasRequestLocale":true},"timestamp":1767040151136,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"i18n.ts:11","message":"Locale resolved","data":{"locale":"fr","isDefault":true},"timestamp":1767040151151,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"i18n.ts:19","message":"Before message import","data":{"locale":"fr"},"timestamp":1767040151152,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"D"}
+{"location":"app/[locale]/layout.tsx:67","message":"After getMessages()","data":{"hasMessages":true,"messageKeys":26},"timestamp":1767040151179,"sessionId":"debug-session","runId":"build-debug","hypothesisId":"C"}
