@@ -10,6 +10,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Forcer le rendu dynamique pour toutes les routes
+  // Cela empêche Next.js de tenter le pré-rendu statique
+  output: 'standalone',
 }
 
 export default withNextIntl(nextConfig)

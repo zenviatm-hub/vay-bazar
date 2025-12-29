@@ -203,17 +203,8 @@ export async function signOut(): Promise<void> {
 }
 
 export async function getCurrentUser(): Promise<User | null> {
-  // #region agent log
-  fetch('http://127.0.0.1:7243/ingest/c69a072d-ed96-46c0-9622-bcd79aba2572',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'lib/auth.ts:205',message:'getCurrentUser entry',data:{phase:process.env.NEXT_PHASE||'unknown',stackTrace:new Error().stack?.split('\n').slice(0,5).join('|')},timestamp:Date.now(),sessionId:'debug-session',runId:'build-debug',hypothesisId:'A'})}).catch(()=>{});
-  // #endregion
   try {
-    // #region agent log
-    fetch('http://127.0.0.1:7243/ingest/c69a072d-ed96-46c0-9622-bcd79aba2572',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'lib/auth.ts:207',message:'Before cookies()',data:{},timestamp:Date.now(),sessionId:'debug-session',runId:'build-debug',hypothesisId:'A'})}).catch(()=>{});
-    // #endregion
     const cookieStore = await cookies()
-    // #region agent log
-    fetch('http://127.0.0.1:7243/ingest/c69a072d-ed96-46c0-9622-bcd79aba2572',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'lib/auth.ts:209',message:'After cookies()',data:{hasSession:!!cookieStore.get("session")?.value},timestamp:Date.now(),sessionId:'debug-session',runId:'build-debug',hypothesisId:'A'})}).catch(()=>{});
-    // #endregion
     const sessionId = cookieStore.get("session")?.value
 
     if (!sessionId) return null

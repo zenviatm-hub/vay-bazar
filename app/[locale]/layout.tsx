@@ -50,14 +50,7 @@ export default async function LocaleLayout({
   children: React.ReactNode
   params: Promise<{ locale: string }>
 }) {
-  // #region agent log
-  fetch('http://127.0.0.1:7243/ingest/c69a072d-ed96-46c0-9622-bcd79aba2572',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app/[locale]/layout.tsx:49',message:'LocaleLayout entry',data:{phase:process.env.NEXT_PHASE||'unknown',nodeEnv:process.env.NODE_ENV},timestamp:Date.now(),sessionId:'debug-session',runId:'build-debug',hypothesisId:'A'})}).catch(()=>{});
-  // #endregion
   const { locale } = await params
-
-  // #region agent log
-  fetch('http://127.0.0.1:7243/ingest/c69a072d-ed96-46c0-9622-bcd79aba2572',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app/[locale]/layout.tsx:56',message:'Locale extracted',data:{locale},timestamp:Date.now(),sessionId:'debug-session',runId:'build-debug',hypothesisId:'A'})}).catch(()=>{});
-  // #endregion
 
   // Valider que la locale est supportée
   if (!locales.includes(locale as any)) {
@@ -67,16 +60,8 @@ export default async function LocaleLayout({
   // IMPORTANT : Définir la locale AVANT getMessages()
   setRequestLocale(locale)
 
-  // #region agent log
-  fetch('http://127.0.0.1:7243/ingest/c69a072d-ed96-46c0-9622-bcd79aba2572',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app/[locale]/layout.tsx:64',message:'Before getMessages()',data:{locale},timestamp:Date.now(),sessionId:'debug-session',runId:'build-debug',hypothesisId:'C'})}).catch(()=>{});
-  // #endregion
-
   // Charger les messages pour cette locale
   const messages = await getMessages()
-
-  // #region agent log
-  fetch('http://127.0.0.1:7243/ingest/c69a072d-ed96-46c0-9622-bcd79aba2572',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app/[locale]/layout.tsx:67',message:'After getMessages()',data:{hasMessages:!!messages,messageKeys:Object.keys(messages||{}).length},timestamp:Date.now(),sessionId:'debug-session',runId:'build-debug',hypothesisId:'C'})}).catch(()=>{});
-  // #endregion
 
   return (
     <NextIntlClientProvider messages={messages}>
