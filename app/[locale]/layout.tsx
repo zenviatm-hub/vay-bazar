@@ -18,10 +18,7 @@ export const dynamic = 'force-dynamic'
 export const revalidate = 0
 export const dynamicParams = true
 
-// Empêcher la génération statique des routes
-export function generateStaticParams() {
-  return []
-}
+// Ne pas définir generateStaticParams() - cela force Next.js à tenter le pré-rendu statique
 
 export const metadata: Metadata = {
   title: "Vay Bazar - Plateforme de petites annonces",
