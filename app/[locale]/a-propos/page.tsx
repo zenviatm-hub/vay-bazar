@@ -1,18 +1,27 @@
-"use client"
-
 import { Link } from "@/lib/navigation"
 import { HeaderClient } from "@/components/header-client"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowLeft, Heart, Users, Shield, Handshake } from "lucide-react"
-import { useTranslations } from "next-intl"
-import { Suspense } from "react"
+import { getTranslations } from "next-intl/server"
+import { setRequestLocale } from "next-intl/server"
 
-function AboutContent() {
-  const t = useTranslations("about")
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
+export default async function AboutPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  setRequestLocale(locale)
+  const t = await getTranslations("about")
   
   return (
-    <>
+    <div className="min-h-screen bg-background">
+      <HeaderClient />
+
       <div className="container mx-auto max-w-4xl px-4 py-8">
         <Button asChild variant="ghost" size="sm" className="mb-6">
           <Link href="/">
@@ -110,23 +119,6 @@ function AboutContent() {
           </div>
         </div>
       </div>
-    </>
-  )
-}
-
-export default function AboutPage() {
-  return (
-    <div className="min-h-screen bg-background">
-      <HeaderClient />
-      <Suspense fallback={
-        <div className="container mx-auto max-w-4xl px-4 py-8">
-          <div className="flex items-center justify-center py-20">
-            <p className="text-muted-foreground">Chargement...</p>
-          </div>
-        </div>
-      }>
-        <AboutContent />
-      </Suspense>
     </div>
   )
 }
