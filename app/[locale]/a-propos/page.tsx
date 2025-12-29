@@ -4,18 +4,11 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowLeft, Heart, Users, Shield, Handshake } from "lucide-react"
 import { getTranslations } from "next-intl/server"
-import { setRequestLocale } from "next-intl/server"
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
 
-export default async function AboutPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
-  const { locale } = await params
-  setRequestLocale(locale)
+export default async function AboutPage() {
   const t = await getTranslations("about")
   
   return (
