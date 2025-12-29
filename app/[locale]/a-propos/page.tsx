@@ -9,6 +9,11 @@ export const dynamic = 'force-dynamic'
 export const revalidate = 0
 export const dynamicParams = true
 
+// Empêcher le prérendu statique
+export async function generateStaticParams() {
+  return []
+}
+
 export default async function AboutPage() {
   const t = await getTranslations("about")
   return (

@@ -14,6 +14,14 @@ import { CookieConsent } from "@/components/cookie-consent"
 const geist = Geist({ subsets: ["latin"] })
 const geistMono = Geist_Mono({ subsets: ["latin"] })
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
+// Empêcher le prérendu statique pour toutes les routes sous ce layout
+export async function generateStaticParams() {
+  return []
+}
+
 export const metadata: Metadata = {
   title: "Vay Bazar - Plateforme de petites annonces",
   description: "Vay Bazar - Plateforme de petites annonces pour la communauté tchétchène",
