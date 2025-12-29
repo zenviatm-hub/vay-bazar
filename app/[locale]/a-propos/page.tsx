@@ -4,17 +4,19 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowLeft, Heart, Users, Shield, Handshake } from "lucide-react"
 import { getTranslations } from "next-intl/server"
+import { unstable_setRequestLocale } from 'next-intl/server'
 
 export const dynamic = 'force-dynamic'
-export const revalidate = 0
 export const dynamicParams = true
+export const runtime = 'nodejs'
 
-// Empêcher le prérendu statique
-export async function generateStaticParams() {
-  return []
-}
-
-export default async function AboutPage() {
+export default async function AboutPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  unstable_setRequestLocale(locale)
   const t = await getTranslations("about")
   return (
     <div className="min-h-screen bg-background">
