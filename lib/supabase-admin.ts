@@ -41,11 +41,34 @@ function getSupabaseAdmin(): SupabaseClient {
   return _supabaseAdmin
 }
 
-// Export avec Proxy pour maintenir la compatibilité avec le code existant
-// Le Proxy garantit que getSupabaseAdmin() n'est appelé que quand une propriété est accédée
+// Créer un Proxy qui intercepte tous les accès et initialise le client seulement au runtime
+// Pendant le build, si les variables ne sont pas disponibles, on crée un client "dummy"
+// qui lancera l'erreur seulement quand on essaie vraiment de l'utiliser
 export const supabaseAdmin = new Proxy({} as SupabaseClient, {
   get(_target, prop) {
-    return (getSupabaseAdmin() as any)[prop]
+    // Essayer d'obtenir le client réel
+    try {
+      const client = getSupabaseAdmin()
+      return (client as any)[prop]
+    } catch (error: any) {
+      // Si l'erreur vient de variables manquantes et qu'on est en build,
+      // créer un objet proxy qui reportera l'erreur seulement au runtime
+      if (error.message?.includes('Missing') && process.env.NEXT_PHASE === 'phase-production-build') {
+        // Pendant le build, retourner un objet qui reportera l'erreur au runtime
+        if (prop === 'from' || prop === 'auth' || prop === 'storage') {
+          return new Proxy({}, {
+            get() {
+              throw new Error(
+                'Supabase client not initialized. Environment variables are missing. ' +
+                'Please ensure all Supabase environment variables are configured in Vercel.'
+              )
+            }
+          })
+        }
+      }
+      // Sinon, propager l'erreur
+      throw error
+    }
   }
 })
 
