@@ -17,6 +17,11 @@ const geistMono = Geist_Mono({ subsets: ["latin"] })
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
 
+// Empêcher la génération statique des routes
+export function generateStaticParams() {
+  return []
+}
+
 export const metadata: Metadata = {
   title: "Vay Bazar - Plateforme de petites annonces",
   description: "Vay Bazar - Plateforme de petites annonces pour la communauté tchétchène",
