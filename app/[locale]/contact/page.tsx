@@ -11,7 +11,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { ArrowLeft, Mail, MessageSquare, Phone } from "lucide-react"
+import { ArrowLeft, MessageSquare } from "lucide-react"
 
 export default function ContactPage() {
   const t = useTranslations("contact")
@@ -71,11 +71,6 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <Label htmlFor="email">{t("form.email")}</Label>
-                    <Input id="email" name="email" type="email" required className="mt-2" />
-                  </div>
-
-                  <div>
                     <Label htmlFor="subject">{t("form.subject")}</Label>
                     <Input id="subject" name="subject" required className="mt-2" />
                   </div>
@@ -94,26 +89,6 @@ export default function ContactPage() {
           </div>
 
           <div className="space-y-4">
-            <Card>
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                  <Mail className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="mb-2 font-semibold text-foreground">{t("contactInfo.email.title")}</h3>
-                <p className="text-sm text-muted-foreground">{t("contactInfo.email.value")}</p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="mb-2 font-semibold text-foreground">{t("contactInfo.phone.title")}</h3>
-                <p className="text-sm text-muted-foreground">{t("contactInfo.phone.value")}</p>
-              </CardContent>
-            </Card>
-
             <Card>
               <CardContent className="p-6">
                 <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
