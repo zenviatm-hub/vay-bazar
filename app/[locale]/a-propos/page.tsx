@@ -1,5 +1,8 @@
 "use client"
 
+// Force dynamic rendering - this page uses cookies() via HeaderClient
+export const dynamic = 'force-dynamic'
+
 import { Link } from "@/lib/navigation"
 import { HeaderClient } from "@/components/header-client"
 import { Button } from "@/components/ui/button"

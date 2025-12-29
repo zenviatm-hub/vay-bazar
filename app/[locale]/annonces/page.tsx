@@ -1,5 +1,8 @@
 "use client"
 
+// Force dynamic rendering - this page uses cookies() via HeaderClient
+export const dynamic = 'force-dynamic'
+
 import { useState, useEffect } from "react"
 import { useTranslations } from "next-intl"
 import { HeaderClient } from "@/components/header-client"
