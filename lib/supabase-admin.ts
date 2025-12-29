@@ -9,8 +9,20 @@ function getSupabaseAdmin(): SupabaseClient {
     const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
     const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY
 
-    if (!supabaseUrl || !supabaseServiceRoleKey) {
-      throw new Error('Missing Supabase admin environment variables')
+    // Vérification plus détaillée pour aider au débogage
+    if (!supabaseUrl) {
+      throw new Error(
+        'Missing NEXT_PUBLIC_SUPABASE_URL environment variable. ' +
+        'Please add it in Vercel: Settings → Environment Variables'
+      )
+    }
+
+    if (!supabaseServiceRoleKey) {
+      throw new Error(
+        'Missing SUPABASE_SERVICE_ROLE_KEY environment variable. ' +
+        'Please add it in Vercel: Settings → Environment Variables. ' +
+        'Make sure to enable it for Production, Preview, and Development environments.'
+      )
     }
 
     // Client pour les opérations serveur (avec service role key)
@@ -30,6 +42,7 @@ function getSupabaseAdmin(): SupabaseClient {
 }
 
 // Export avec Proxy pour maintenir la compatibilité avec le code existant
+// Le Proxy garantit que getSupabaseAdmin() n'est appelé que quand une propriété est accédée
 export const supabaseAdmin = new Proxy({} as SupabaseClient, {
   get(_target, prop) {
     return (getSupabaseAdmin() as any)[prop]
