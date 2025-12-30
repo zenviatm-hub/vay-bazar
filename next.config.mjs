@@ -10,6 +10,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Note: Les pages utilisent dynamic = 'error' pour empêcher le pré-rendu statique
 }
 
 export default withNextIntl(nextConfig)

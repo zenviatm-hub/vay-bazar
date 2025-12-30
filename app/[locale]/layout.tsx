@@ -14,7 +14,8 @@ import { CookieConsent } from "@/components/cookie-consent"
 const geist = Geist({ subsets: ["latin"] })
 const geistMono = Geist_Mono({ subsets: ["latin"] })
 
-export const dynamic = 'force-dynamic'
+// Forcer le rendu dynamique et empêcher le pré-rendu statique
+export const dynamic = 'error'
 export const revalidate = 0
 export const dynamicParams = true
 

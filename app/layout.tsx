@@ -7,6 +7,12 @@ const geistMono = Geist_Mono({ subsets: ["latin"] })
 
 // Layout racine minimal requis par Next.js
 // Le layout [locale] gère le contenu et l'attribut lang sera mis à jour dynamiquement
+
+// Forcer le rendu dynamique pour toutes les routes
+export const dynamic = 'error'
+export const revalidate = 0
+export const dynamicParams = true
+
 export default function RootLayout({
   children,
 }: {
