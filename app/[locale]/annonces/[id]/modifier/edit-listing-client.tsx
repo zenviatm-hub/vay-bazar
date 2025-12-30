@@ -18,8 +18,13 @@ import { getCategories, type Category } from "@/lib/data-store"
 import { getCities, formatPhoneNumber, validatePhoneNumber, type City } from "@/lib/cities"
 import { Upload, X, AlertCircle, Truck, Heart, HardHat } from "lucide-react"
 import imageCompression from "browser-image-compression"
+import type { Listing } from "@/lib/data-store"
 
-export function NewListingClient() {
+interface EditListingClientProps {
+  listing: Listing
+}
+
+export function EditListingClient({ listing }: EditListingClientProps) {
   const t = useTranslations("newListing")
   const router = useRouter()
   const [categories, setCategories] = useState<Category[]>([])
@@ -27,20 +32,21 @@ export function NewListingClient() {
   const [cities, setCities] = useState<City[]>([])
   const [loadingCities, setLoadingCities] = useState(true)
   const [formData, setFormData] = useState({
-    title: "",
-    description: "",
-    categoryId: "",
-    price: "",
-    priceNegotiable: false,
-    condition: "",
-    location: "",
-    images: [] as string[], // URLs pour prévisualisation
-    imageFiles: [] as File[], // Fichiers originaux pour upload
-    departureCity: "",
-    arrivalCity: "",
-    skills: "",
-    experience: "",
-    whatsappNumber: "",
+    title: listing.title || "",
+    description: listing.description || "",
+    categoryId: listing.categoryId?.toString() || "",
+    price: listing.price?.toString() || "",
+    priceNegotiable: listing.priceNegotiable || false,
+    condition: listing.condition || "",
+    location: listing.location || "",
+    images: listing.images || [], // URLs existantes pour prévisualisation
+    imageFiles: [] as File[], // Nouveaux fichiers pour upload
+    existingImages: listing.images || [], // Images existantes à conserver
+    departureCity: listing.departureCity || "",
+    arrivalCity: listing.arrivalCity || "",
+    skills: Array.isArray(listing.skills) ? listing.skills.join(", ") : (listing.skills || ""),
+    experience: listing.experience || "",
+    whatsappNumber: listing.whatsappNumber || "",
   })
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
@@ -77,15 +83,13 @@ export function NewListingClient() {
 
   // Nettoyer les URLs d'objets lors du démontage du composant
   useEffect(() => {
-    const images = formData.images
+    const images = formData.imageFiles
     return () => {
-      images.forEach((url) => {
-        if (url.startsWith("blob:")) {
-          URL.revokeObjectURL(url)
-        }
+      images.forEach((file) => {
+        // Les fichiers ne nécessitent pas de nettoyage URL.revokeObjectURL
       })
     }
-  }, [formData.images])
+  }, [formData.imageFiles])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -116,7 +120,7 @@ export function NewListingClient() {
     setLoading(true)
 
     try {
-      // Convertir les images en base64
+      // Convertir les nouvelles images en base64
       const imageBase64Promises = formData.imageFiles.map((file) => {
         return new Promise<string>((resolve, reject) => {
           const reader = new FileReader()
@@ -131,9 +135,12 @@ export function NewListingClient() {
 
       const imageBase64Array = await Promise.all(imageBase64Promises)
 
-      // Appeler l'API pour créer l'annonce
-      const response = await fetch("/api/listings", {
-        method: "POST",
+      // Combiner les images existantes et les nouvelles
+      const allImages = [...formData.existingImages, ...imageBase64Array]
+
+      // Appeler l'API pour mettre à jour l'annonce
+      const response = await fetch(`/api/listings/${listing.id}`, {
+        method: "PUT",
         headers: {
           "Content-Type": "application/json",
         },
@@ -145,6 +152,7 @@ export function NewListingClient() {
           priceNegotiable: formData.priceNegotiable,
           condition: formData.condition || null,
           location: formData.location,
+          existingImages: formData.existingImages,
           images: imageBase64Array,
           departureCity: formData.departureCity || null,
           arrivalCity: formData.arrivalCity || null,
@@ -162,10 +170,10 @@ export function NewListingClient() {
         return
       }
 
-      // Rediriger vers la page des annonces
-      router.push("/mes-annonces")
+      // Rediriger vers la page de l'annonce
+      router.push(`/annonces/${listing.id}`)
     } catch (error: any) {
-      console.error("Erreur lors de la création de l'annonce:", error)
+      console.error("Erreur lors de la mise à jour de l'annonce:", error)
       setError(t("errors.createError"))
       setLoading(false)
     }
@@ -213,14 +221,25 @@ export function NewListingClient() {
   }
 
   const removeImage = (index: number) => {
-    // Libérer l'URL de l'image supprimée
-    URL.revokeObjectURL(formData.images[index])
+    const imageToRemove = formData.images[index]
     
-    setFormData({
-      ...formData,
-      images: formData.images.filter((_, i) => i !== index),
-      imageFiles: formData.imageFiles.filter((_, i) => i !== index),
-    })
+    // Si c'est une image existante (URL), la retirer de existingImages
+    if (imageToRemove.startsWith("http") || imageToRemove.startsWith("https")) {
+      setFormData({
+        ...formData,
+        images: formData.images.filter((_, i) => i !== index),
+        existingImages: formData.existingImages.filter((img) => img !== imageToRemove),
+      })
+    } else {
+      // Si c'est une nouvelle image (blob), libérer l'URL et retirer le fichier
+      URL.revokeObjectURL(imageToRemove)
+      const fileIndex = index - formData.existingImages.length
+      setFormData({
+        ...formData,
+        images: formData.images.filter((_, i) => i !== index),
+        imageFiles: formData.imageFiles.filter((_, i) => i !== fileIndex),
+      })
+    }
   }
 
   const selectedCategory = categories.find((cat) => cat.id.toString() === formData.categoryId)
@@ -235,7 +254,7 @@ export function NewListingClient() {
       <div className="container mx-auto max-w-4xl px-4 py-8">
         <div className="mb-8">
           <h1 className="mb-2 text-3xl font-bold text-foreground">{t("title")}</h1>
-          <p className="text-muted-foreground">{t("subtitle")}</p>
+          <p className="text-muted-foreground">Modifier votre annonce</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -580,7 +599,7 @@ export function NewListingClient() {
               {t("actions.cancel")}
             </Button>
             <Button type="submit" disabled={loading} className="sm:w-auto">
-              {loading ? t("actions.publishing") : t("actions.publish")}
+              {loading ? "Enregistrement..." : "Enregistrer les modifications"}
             </Button>
           </div>
         </form>
@@ -588,6 +607,4 @@ export function NewListingClient() {
     </div>
   )
 }
-
-
 
