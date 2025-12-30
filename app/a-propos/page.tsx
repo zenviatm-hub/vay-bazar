@@ -6,7 +6,7 @@ import { ArrowLeft, Heart, Users, Shield, Handshake } from "lucide-react"
 
 export const metadata = {
   title: "À propos - Vay Bazar",
-  description: "Découvrez Vay Bazar, la plateforme d'échange de la communauté tchétchène",
+  description: "Découvrez Vay Bazar, la plateforme d'échange de la communauté Tchétchène",
 }
 
 export default function AboutPage() {
@@ -25,7 +25,7 @@ export default function AboutPage() {
         <div className="mb-8">
           <h1 className="mb-4 text-4xl font-bold text-foreground">À propos de Vay Bazar</h1>
           <p className="text-lg text-muted-foreground">
-            La plateforme d'échange créée par et pour la communauté tchétchène
+            La plateforme d'échange créée par et pour la communauté Tchétchène
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export default function AboutPage() {
           <p className="text-muted-foreground leading-relaxed">
             Vay Bazar a été créé avec une vision simple mais puissante : faciliter les échanges et renforcer les liens
             au sein de notre communauté. Dans un monde où la confiance est précieuse, nous offrons un espace sûr où les
-            membres de la communauté tchétchène peuvent acheter, vendre et échanger des biens et services en toute
+            membres de la communauté Tchétchène peuvent acheter, vendre et échanger des biens et services en toute
             confiance.
           </p>
         </div>

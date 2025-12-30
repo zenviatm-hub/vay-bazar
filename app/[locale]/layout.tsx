@@ -22,7 +22,7 @@ export const dynamicParams = true
 
 export const metadata: Metadata = {
   title: "Vay Bazar - Plateforme de petites annonces",
-  description: "Vay Bazar - Plateforme de petites annonces pour la communauté tchétchène",
+  description: "Vay Bazar - Plateforme de petites annonces pour la communauté Tchétchène",
   generator: "v0.app",
   icons: {
     icon: [
