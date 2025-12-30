@@ -4,21 +4,14 @@ import { NextIntlClientProvider } from "next-intl"
 import { getMessages, setRequestLocale } from "next-intl/server"
 import { notFound } from "next/navigation"
 import { locales } from "@/i18n"
-import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "../globals.css"
 import { Footer } from "@/components/footer"
 import { MobileNav } from "@/components/mobile-nav"
 import { CookieConsent } from "@/components/cookie-consent"
 
-const geist = Geist({ 
-  subsets: ["latin"],
-  display: 'swap', // Évite le blocage du rendu pendant le chargement
-})
-const geistMono = Geist_Mono({ 
-  subsets: ["latin"],
-  display: 'swap',
-})
+// Utilisation de polices système natives locales pour de meilleures performances
+// Les polices système sont déjà disponibles localement
 
 // Forcer le rendu dynamique et empêcher le pré-rendu statique
 export const dynamic = 'force-dynamic'
@@ -72,7 +65,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <div className={`${geist.className} ${geistMono.className} flex min-h-screen flex-col`}>
+      <div className="flex min-h-screen flex-col">
         <main className="content-with-mobile-nav flex-1">{children}</main>
         <Footer />
       </div>
