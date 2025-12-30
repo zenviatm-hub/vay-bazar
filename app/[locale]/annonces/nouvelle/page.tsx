@@ -2,7 +2,7 @@ import { unstable_noStore as noStore } from "next/cache"
 import { NewListingClient } from "./new-listing-client"
 
 // Forcer le rendu dynamique et empêcher le pré-rendu statique
-export const dynamic = 'error'
+export const dynamic = 'force-dynamic'
 export const revalidate = 0
 export const dynamicParams = true
 export const runtime = 'nodejs'

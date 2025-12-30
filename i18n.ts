@@ -5,6 +5,9 @@ export const locales = ["fr", "ru", "ce"] as const
 export type Locale = (typeof locales)[number]
 export const defaultLocale: Locale = "fr"
 
+// Forcer le rendu dynamique pour toutes les routes utilisant next-intl
+export const dynamic = 'force-dynamic'
+
 export default getRequestConfig(async ({ requestLocale }) => {
   // La locale est automatiquement fournie par le middleware
   let locale = await requestLocale
