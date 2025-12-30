@@ -11,11 +11,17 @@ import { Footer } from "@/components/footer"
 import { MobileNav } from "@/components/mobile-nav"
 import { CookieConsent } from "@/components/cookie-consent"
 
-const geist = Geist({ subsets: ["latin"] })
-const geistMono = Geist_Mono({ subsets: ["latin"] })
+const geist = Geist({ 
+  subsets: ["latin"],
+  display: 'swap', // Évite le blocage du rendu pendant le chargement
+})
+const geistMono = Geist_Mono({ 
+  subsets: ["latin"],
+  display: 'swap',
+})
 
 // Forcer le rendu dynamique et empêcher le pré-rendu statique
-export const dynamic = 'error'
+export const dynamic = 'force-dynamic'
 export const revalidate = 0
 export const dynamicParams = true
 
