@@ -9,7 +9,7 @@ const geistMono = Geist_Mono({ subsets: ["latin"] })
 // Le layout [locale] gère le contenu et l'attribut lang sera mis à jour dynamiquement
 
 // Forcer le rendu dynamique pour toutes les routes
-export const dynamic = 'error'
+export const dynamic = 'force-dynamic'
 export const revalidate = 0
 export const dynamicParams = true
 
